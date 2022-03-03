@@ -10,8 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
     @State private var correctAnswer = Int.random(in: 0...2)
-    @State private var showingScore = false
+    
     @State private var scoreTitle = ""
+    @State private var playerScore = 0
+    @State private var roundCount = 1
+    
+    @State private var showingScore = false
+    @State private var showingReset = false
     
     var body: some View {
         ZStack{
@@ -39,7 +44,6 @@ struct ContentView: View {
                     ForEach(0..<3) { number in
                         Button {
                             flagTapped(number)
-                            
                         } label: {
                             Image(countries[number])
                                 .renderingMode(.original)
@@ -56,33 +60,75 @@ struct ContentView: View {
                 Spacer()
                 Spacer()
                 
-                Text("Score: ???")
-                    .foregroundColor(.white)
-                    .font(.title.bold())
+                HStack {
+//                    Spacer()
+                    
+                    Text("Round \(roundCount) of 8")
+                        .foregroundColor(.white)
+                    
+                    Spacer()
+//                    Spacer()
+                    
+                    Text("Score: \(playerScore)")
+                        .foregroundColor(.white)
+                        .font(.title.bold())
+                    
+//                    Spacer()
+                }
                 
                 Spacer()
             }
             .padding()
         }
         
+        
         .alert(scoreTitle, isPresented: $showingScore) {
             Button("Continue", action: askQuestion)
         } message: {
-            Text("Your score is ???")
+            Text("Your score is \(playerScore)")
+        }
+        .alert("Result", isPresented: $showingReset) {
+            Button("Restart", action: restartGame)
+        } message: {
+            Text("Your final score is \(playerScore), press to restart the game!")
         }
         
+//        {
+//            Button("Continue", action: askQuestion)
+//        } message: {
+//            Text("Your score is \(playerScore)")
+//        }
+        
     }
+    
+    
     func flagTapped(_ number: Int) {
         if number == correctAnswer {
             scoreTitle = "Correct"
+            playerScore += 1
         } else {
-            scoreTitle = "Wrong"
+            scoreTitle = "Wrong! That's the flag of \(countries[number])"
         }
-        
+
         showingScore = true
+
     }
     
     func askQuestion() {
+        roundCount += 1
+        if roundCount > 8 {
+            roundCount = 8
+            showingReset = true
+        } else {
+            showingReset = false
+            countries.shuffle()
+            correctAnswer = Int.random(in: 0...2)
+        }
+    }
+    
+    func restartGame() {
+        playerScore = 0
+        roundCount = 1
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
     }

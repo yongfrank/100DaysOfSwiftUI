@@ -7,5 +7,6 @@
         <page name='checkpoint-2'/>
         <page name='Day5-Conditions'/>
         <page name='Day6-Loop'/>
+        <page name='Day7-Function'/>
     </pages>
 </playground>
