@@ -59,13 +59,17 @@ func estimateCost(unit: Int) -> Int {
 let (res) = estimateCost(unit: 111)
 print(res)
 
-func formatLength(length length: Int) {
-    print("That measures \(length)cm.")
+func formatLength(length apple: Int) {
+    print("That measures \(apple)cm.")
 }
 formatLength(length: 95)
 
 func evaluateJavaScript(_ input: String) {
     print("Yup, that's JavaScript alright.")
 }
+
+evaluateJavaScript("Hi")
+
+
 
 //: [Next](@next)
