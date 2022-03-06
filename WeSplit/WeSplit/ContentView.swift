@@ -10,6 +10,9 @@ struct ContentView: View {
     @State private var checkAmount = 0.0
     @State private var numberOfPeople = 2
     @State private var tipPercentage = 20
+    
+    @State private var isZeroTipPercent = false
+    
     let tipPercentages = [10, 15, 20, 25, 0]
     
     var dollarFormat: FloatingPointFormatStyle<Double>.Currency {
@@ -75,6 +78,7 @@ struct ContentView: View {
                 
                 Section {
                     Text(totalAmount, format: dollarFormat)
+                        .foregroundColor(tipPercentage == 0 ? .red : .black)
                 } header: {
                     Text("Original amount plus tip value")
                 }

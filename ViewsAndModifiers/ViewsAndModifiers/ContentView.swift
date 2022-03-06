@@ -7,6 +7,8 @@
 
 import SwiftUI
 
+
+
 // This is custom containers
 struct GridStack <Content: View>: View {
     let rows: Int
@@ -78,29 +80,72 @@ extension View {
         modifier(Watermark(text: text))
     }
 }
+// Watermark make ends here
 
+struct LargeBlueFont: ViewModifier {
+    var stateColor = false
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(stateColor ? .red : .white)
+            .buttonStyle(.borderedProminent)
+    }
+}
 
+extension View {
+    func largeBlueButton(with stateColor: Bool) -> some View {
+        modifier(LargeBlueFont(stateColor: stateColor))
+    }
+}
 struct ContentView: View {
-    
+    @State private var buttonColor = false
     var body: some View {
-        VStack(spacing: 10) {
-            CapsuleView(text: "First")
-                .foregroundColor(.white)
-            CapsuleView(text: "Second")
-                .foregroundColor(.yellow)
-            Text("Hello, world!")
-                .modifier(Title())
-            Text("Hello, world!")
-                .titleStyle()
-                .watermarked(with: "Created by Frank Chu")
-            Color.blue
-                .frame(width: 300, height: 200)
-                .watermarked(with: "Hacking with Swift")
-            GridStack(rows: 4, columns: 4) { row, col in
-                Image(systemName: "\(row * 4 + col).circle")
-                Text("R\(row) C\(col)")
+        TabView {
+            
+            ScrollView {
+                VStack(spacing: 10) {
+                    Color.blue
+                        .frame(width: 300, height: 200)
+                        .watermarked(with: "Hacking with Swift")
+                    
+                    CapsuleView(text: "First")
+                        .foregroundColor(.white)
+                    CapsuleView(text: "Second")
+                        .foregroundColor(.yellow)
+                    Text("Hello, world!")
+                        .modifier(Title())
+                    Text("Hello, world!")
+                        .titleStyle()
+                    
+                    GridStack(rows: 4, columns: 4) { row, col in
+                        Image(systemName: "\(row * 4 + col).circle")
+                        Text("R\(row) C\(col)")
+                    }
+                    
+                    Button("Hello, world") {
+                        buttonColor.toggle()
+                    }
+                    .largeBlueButton(with: buttonColor)
+                    .watermarked(with: "Created by Frank")
+                    Button("Hello, world") {
+                        buttonColor.toggle()
+                    }
+                    .largeBlueButton(with: buttonColor)
+                }
             }
-            .watermarked(with: "Created by Frank")
+            .tabItem {
+                Label("Home", systemImage: "person")
+            }
+            
+            VStack {
+                Button("Hello, world") {
+                    buttonColor.toggle()
+                }
+                .largeBlueButton(with: buttonColor)
+            }
+            .tabItem {
+                Label("Favorites", systemImage: "star")
+            }
         }
     }
 }
