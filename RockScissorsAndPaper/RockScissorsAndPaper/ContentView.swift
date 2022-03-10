@@ -114,6 +114,7 @@ struct ContentView: View {
                 VStack {
                     Text("Result: \(scoreTitile)")
                         .font(.largeTitle.weight(.heavy))
+                        .foregroundColor(scoreTitile == "Wrong" ? .red : .black)
                 }
                 .frostedGlass()
                 
