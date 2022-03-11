@@ -11,6 +11,7 @@
         <page name='Day8-FunctionP2'/>
         <page name='Day9-Closures'/>
         <page name='Day10-Struct'/>
-        <page name='Day11-Struct'/>
+        <page name='Day11-StructP2'/>
+        <page name='Day12-Classes'/>
     </pages>
 </playground>
