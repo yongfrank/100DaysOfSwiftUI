@@ -18,6 +18,21 @@ struct FlagView: View {
     }
 }
 
+struct FrostedGlass: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .frame(maxWidth: .infinity)
+            .padding(.vertical, 20)
+            .background(.regularMaterial)
+            .clipShape(RoundedRectangle(cornerRadius: 20))
+    }
+}
+
+extension View {
+    func frostedGlass() -> some View {
+        modifier(FrostedGlass())
+    }
+}
 
 struct ContentView: View {
     @State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
@@ -29,6 +44,12 @@ struct ContentView: View {
     
     @State private var showingScore = false
     @State private var showingReset = false
+    
+    // Amimation things
+    @State private var animationAmount = 0.0
+    @State private var opacityAmount = 2.0
+    
+    @State private var buttonChoosed = 1
     
     var body: some View {
         ZStack{
@@ -56,17 +77,34 @@ struct ContentView: View {
                     ForEach(0..<3) { number in
                         Button {
                             flagTapped(number)
+                            withAnimation {
+                                animationAmount += 360
+                                opacityAmount = 0.5
+                            }
                         } label: {
                             FlagView(text: countries[number])
                         }
+                        .rotation3DEffect(.degrees(number == buttonChoosed ? animationAmount: 0), axis: (x: 0, y: 1, z: 0))
+                        .opacity(number == buttonChoosed ? 2 : opacityAmount)
+                        
                     }
                 }
-                .frame(maxWidth: .infinity)
-                .padding(.vertical, 20)
-                .background(.regularMaterial)
-                .clipShape(RoundedRectangle(cornerRadius: 20))
+                .frostedGlass()
+                
                 
                 Spacer()
+                
+                VStack {
+                    Text("\(scoreTitle)")
+                        .font(.title.bold())
+                        .frame(width: 300, height: 70, alignment: .center)
+//                        .fixedSize(horizontal: true, vertical: true)
+//                        .lineLimit(2)
+                    Button("Continue", action: askQuestion)
+                }
+                .frostedGlass()
+                
+                
                 Spacer()
                 
                 HStack {
@@ -91,11 +129,11 @@ struct ContentView: View {
         }
         
         
-        .alert(scoreTitle, isPresented: $showingScore) {
-            Button("Continue", action: askQuestion)
-        } message: {
-            Text("Your score is \(playerScore)")
-        }
+//        .alert(scoreTitle, isPresented: $showingScore) {
+//            Button("Continue", action: askQuestion)
+//        } message: {
+//            Text("Your score is \(playerScore)")
+//        }
         .alert("Result", isPresented: $showingReset) {
             Button("Restart", action: restartGame)
         } message: {
@@ -118,28 +156,40 @@ struct ContentView: View {
         } else {
             scoreTitle = "Wrong! That's the flag of \(countries[number])"
         }
-
+        
+        buttonChoosed = number
         showingScore = true
 
     }
     
     func askQuestion() {
+        
         roundCount += 1
         if roundCount > 8 {
             roundCount = 8
             showingReset = true
+            
+            opacityAmount = 0.5
         } else {
             showingReset = false
             countries.shuffle()
             correctAnswer = Int.random(in: 0...2)
+            
+            scoreTitle = ""
+            opacityAmount = 2
         }
+        
     }
     
     func restartGame() {
+        
         playerScore = 0
         roundCount = 1
         countries.shuffle()
         correctAnswer = Int.random(in: 0...2)
+        
+        scoreTitle = ""
+        opacityAmount = 2
     }
 }
 

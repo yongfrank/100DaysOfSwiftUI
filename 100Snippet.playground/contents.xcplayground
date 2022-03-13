@@ -13,5 +13,6 @@
         <page name='Day10-Struct'/>
         <page name='Day11-StructP2'/>
         <page name='Day12-Classes'/>
+        <page name='Day13-ProtocolsExtensions'/>
     </pages>
 </playground>
