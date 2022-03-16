@@ -178,7 +178,14 @@ print(user1 == user2)
 print(user1 != user2)
 print(user1 < user2)
 
+let dateFormatter = DateFormatter()
+dateFormatter.dateStyle = .full
+dateFormatter.timeStyle = .full
+ 
+let date = Date(timeIntervalSinceNow: 0)
 
+dateFormatter.locale = Locale(identifier: "en_US")
+print(dateFormatter.string(from: date))
 
 
 

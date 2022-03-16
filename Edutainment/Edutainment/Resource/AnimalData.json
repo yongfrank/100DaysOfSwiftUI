@@ -1,0 +1,152 @@
+[
+	{
+		"name": "bear",
+        "id": 1,
+        "imageName": "bear"
+	},
+	{
+		"name": "buffalo",
+        "id": 2,
+        "imageName": "buffalo"
+	},
+	{
+		"name": "chick",
+        "id": 3,
+        "imageName": "chick"
+	},
+	{
+		"name": "chicken",
+        "id": 4,
+        "imageName": "chicken"
+	},
+	{
+		"name": "cow",
+        "id": 5,
+        "imageName": "cow"
+	},
+	{
+		"name": "crocodile",
+        "id": 6,
+        "imageName": "crocodile"
+	},
+	{
+		"name": "dog",
+        "id": 7,
+        "imageName": "dog"
+	},
+	{
+		"name": "duck",
+        "id": 8,
+        "imageName": "duck"
+	},
+	{
+		"name": "elephant",
+        "id": 9,
+        "imageName": "elephant"
+	},
+	{
+		"name": "frog",
+        "id": 10,
+        "imageName": "frog"
+	},
+	{
+		"name": "giraffe",
+        "id": 11,
+        "imageName": "giraffe"
+	},
+	{
+		"name": "goat",
+        "id": 12,
+        "imageName": "goat"
+	},
+	{
+		"name": "gorilla",
+        "id": 13,
+        "imageName": "gorilla"
+	},
+	{
+		"name": "hippo",
+        "id": 14,
+        "imageName": "hippo"
+	},
+	{
+		"name": "horse",
+        "id": 15,
+        "imageName": "horse"
+	},
+	{
+		"name": "monkey",
+        "id": 16,
+        "imageName": "monkey"
+	},
+	{
+		"name": "moose",
+        "id": 17,
+        "imageName": "moose"
+	},
+	{
+		"name": "narwhal",
+        "id": 18,
+        "imageName": "narwhal"
+	},
+	{
+		"name": "owl",
+        "id": 19,
+        "imageName": "owl"
+	},
+	{
+		"name": "panda",
+        "id": 20,
+        "imageName": "panda"
+	},
+	{
+		"name": "parrot",
+        "id": 21,
+        "imageName": "parrot"
+	},
+	{
+		"name": "penguin",
+        "id": 22,
+        "imageName": "penguin"
+	},
+	{
+		"name": "pig",
+        "id": 23,
+        "imageName": "pig"
+	},
+	{
+		"name": "rabbit",
+        "id": 24,
+        "imageName": "rabbit"
+	},
+	{
+		"name": "rhino",
+        "id": 25,
+        "imageName": "rhino"
+	},
+	{
+		"name": "sloth",
+        "id": 26,
+        "imageName": "sloth"
+	},
+	{
+		"name": "snake",
+        "id": 27,
+        "imageName": "snake"
+	},
+	{
+		"name": "walrus",
+        "id": 28,
+        "imageName": "walrus"
+	},
+	{
+		"name": "whale",
+        "id": 29,
+        "imageName": "whale"
+	},
+	{
+		"name": "zabra",
+        "id": 30,
+        "imageName": "zebra"
+	}
+]
