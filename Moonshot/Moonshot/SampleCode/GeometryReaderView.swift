@@ -21,6 +21,7 @@ struct GeometryReaderView: View {
         }
     //            .clipped()
         
+        
     }
 }
 

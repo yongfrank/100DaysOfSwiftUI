@@ -2,7 +2,6 @@
 <playground version='6.0' target-platform='macos' display-mode='raw' buildActiveScheme='true' importAppTypes='true'>
     <pages>
         <page name='welcomePage'/>
-        <page name='Enumerations'/>
         <page name='dollarFormatter'/>
         <page name='checkpoint-2'/>
         <page name='Day5-Conditions'/>
@@ -14,5 +13,6 @@
         <page name='Day11-StructP2'/>
         <page name='Day12-Classes'/>
         <page name='Day13-ProtocolsExtensions'/>
+        <page name='Day14-Optionals'/>
     </pages>
 </playground>

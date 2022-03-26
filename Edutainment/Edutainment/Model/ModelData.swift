@@ -7,12 +7,12 @@
 
 import Foundation
 
-//https://developer.apple.com/tutorials/swiftui/handling-user-input
-//import Combine
+//  https://developer.apple.com/tutorials/swiftui/handling-user-input
+//  import Combine
 //
-//final class ModelData: ObservableObject {
-//    var landmarks: [Landmark] = load("landmarkData.json")
-//}
+//  final class ModelData: ObservableObject {
+//      var landmarks: [Landmark] = load("landmarkData.json")
+//  }
 
 
 var animals: [Animal] = load("AnimalData.json")
