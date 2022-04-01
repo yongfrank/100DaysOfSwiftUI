@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE3154AB27F5A8590020AE91 /* DrawingWrapUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE3154AA27F5A8590020AE91 /* DrawingWrapUp.swift */; };
 		FE6670E227E5BF820069721E /* CGAffineTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6670E127E5BF820069721E /* CGAffineTransformView.swift */; };
 		FE6670E427E5C41E0069721E /* ImagePoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6670E327E5C41E0069721E /* ImagePoint.swift */; };
 		FE6670E627E5C8900069721E /* DrawingGroupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6670E527E5C8900069721E /* DrawingGroupView.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE3154AA27F5A8590020AE91 /* DrawingWrapUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DrawingWrapUp.swift; path = Assets.xcassets/DrawingWrapUp.swift; sourceTree = "<group>"; };
 		FE6670E127E5BF820069721E /* CGAffineTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGAffineTransformView.swift; sourceTree = "<group>"; };
 		FE6670E327E5C41E0069721E /* ImagePoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePoint.swift; sourceTree = "<group>"; };
 		FE6670E527E5C8900069721E /* DrawingGroupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingGroupView.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				FE6C0CCB27EC4077006E3DD0 /* AnimatingSimpleShapes.swift */,
 				FE6C0CCF27EC519A006E3DD0 /* ComplexShapeWithAnimatablePair.swift */,
 				FE6C0CD127EC5867006E3DD0 /* CreatingASpirograph.swift */,
+				FE3154AA27F5A8590020AE91 /* DrawingWrapUp.swift */,
 				FEBD266827E4DE1E00FF40BB /* Assets.xcassets */,
 				FEBD266A27E4DE1E00FF40BB /* Preview Content */,
 			);
@@ -170,6 +173,7 @@
 				FE6C0CCC27EC4077006E3DD0 /* AnimatingSimpleShapes.swift in Sources */,
 				FE6C0CD227EC5867006E3DD0 /* CreatingASpirograph.swift in Sources */,
 				FE6670E427E5C41E0069721E /* ImagePoint.swift in Sources */,
+				FE3154AB27F5A8590020AE91 /* DrawingWrapUp.swift in Sources */,
 				FEBD266727E4DE1C00FF40BB /* ContentView.swift in Sources */,
 				FE6670EA27E5EBB00069721E /* SwiftUIView.swift in Sources */,
 				FE6C0CCA27EC3C01006E3DD0 /* SpecialEffect.swift in Sources */,

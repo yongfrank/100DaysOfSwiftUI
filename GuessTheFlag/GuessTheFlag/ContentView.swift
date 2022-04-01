@@ -100,7 +100,15 @@ struct ContentView: View {
                         .frame(width: 300, height: 70, alignment: .center)
 //                        .fixedSize(horizontal: true, vertical: true)
 //                        .lineLimit(2)
-                    Button("Continue", action: askQuestion)
+                    HStack {
+                        Spacer()
+                        Button("Continue", action: askQuestion)
+                        Spacer()
+                        Button("Restart", action: restartGame)
+                        Spacer()
+                        
+                    }
+                    .padding(.horizontal)
                 }
                 .frostedGlass()
                 
@@ -159,7 +167,6 @@ struct ContentView: View {
         
         buttonChoosed = number
         showingScore = true
-
     }
     
     func askQuestion() {
