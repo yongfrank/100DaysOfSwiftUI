@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <playground version='6.0' target-platform='macos' display-mode='rendered' buildActiveScheme='true' importAppTypes='true'>
     <pages>
-        <page name='Day1-Variables'/>
-        <page name='Untitled Page'/>
+        <page name='Day1-Simple-Types'/>
+        <page name='Challenge-Page'/>
+        <page name='Day2-Complex-Types'/>
+        <page name='Day3-OperatorOverloading'/>
+        <page name='Day4-Loop'/>
+        <page name='Day5-Function'/>
+        <page name='Day6-ClosureP1'/>
+        <page name='Day7-ClosureP2'/>
+        <page name='Day8-Struct'/>
     </pages>
 </playground>

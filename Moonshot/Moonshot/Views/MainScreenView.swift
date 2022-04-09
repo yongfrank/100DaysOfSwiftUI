@@ -14,30 +14,45 @@ struct MainScreenView: View {
     
     
     var body: some View {
-        NavigationView {
-            
-            Group {
-                if showingGrid {
-                    GridLayout()
-                } else {
-                    ListLayout()
-                }
-            }
-            
-            .navigationTitle("Moonshot")
-            .background(.darkBackground)
-            .preferredColorScheme(.dark)
-            .toolbar {
-                HStack {
-                    Button {
-                        showingGrid.toggle()
-                    } label: {
-                        showingGrid == true ? Image(systemName: "square.grid.2x2") : Image(systemName: "list.dash")
+        TabView {
+            NavigationView {
+                
+                Group {
+                    if showingGrid {
+                        GridLayout()
+                    } else {
+                        ListLayout()
                     }
-                    
-                    
                 }
+                
+                .navigationTitle("Moonshot")
+                .background(.darkBackground)
+                .preferredColorScheme(.dark)
+                .toolbar {
+                    HStack {
+                        Button {
+                            showingGrid.toggle()
+                        } label: {
+                            showingGrid == true ? Image(systemName: "square.grid.2x2") : Image(systemName: "list.dash")
+                        }
+                        
+                        
+                    }
+                }
+//                Group{
+                    Text("Select a moonshot")
+//                }
+                .frame(maxWidth: .infinity, maxHeight: .infinity)
+                    .background(.darkBackground)
+                    .foregroundColor(.secondary)
             }
+            .tabItem {
+                Label("Home", systemImage: "house")
+            }
+            TestView()
+                .tabItem {
+                    Label("Test", systemImage: "hammer")
+                }
         }
         
     }
