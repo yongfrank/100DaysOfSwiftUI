@@ -1,0 +1,26 @@
+/*
+  Localizable.strings
+  temperatureConversion
+
+  Created by Frank Chu on 4/17/22.
+  
+*/
+
+
+
+"GuideBook..WelcomeMessageOh My Flag..Paragraph0" = "Hi, welcome to Oh My Flag Tutorials🥳. In this walk through, you'll learn the interface of this App created by amazing Swift Playgrounds and [SwiftUI](glossary://SwiftUI).";
+
+"GuideBook..Guide0..StepIntroduction..LearningCenterContent..GuideButtonStart Walkthrough..title" = "Let's GO!";
+
+"GuideBook..Guide0..StepIntroduction..LearningCenterContent..Paragraph1" = "![](intro.PNG)";
+
+"GuideBook..Guide0..StepIntroduction..LearningCenterContent..Paragraph2" = "Welcome to Oh My Flag App. In this walk through, you'll learn the interface of this App created by amazing Playgrounds and [SwiftUI](glossary://SwiftUI).";
+
+"GuideBook..Guide0..StepIntroduction..LearningCenterContent..Paragraph3" = "Run the preview and tap Button `Ok, I know` to select the tabs the the bottom of the screen: Gellery, Quiz and Drawing.";
+
+"GuideBook..Guide0..StepIntroduction..LearningCenterContent..Paragraph4" = "You can know the composition of this app, and how the app works. After you know the logic of this app, tap play button to enjoy it!";
+
+"GuideBook..Guide0..StepIntroduction..TaskGallery..Paragraph5" = "Get into the first page. Create the flags randomly or by your own hand.";
+
+"GuideBook..Guide0..StepIntroduction..TaskGallery..PageGallery..Paragraph6" = "This is the first tab called gallery. As the name suggests it's a place to exhibit your beloved flags.";"
+

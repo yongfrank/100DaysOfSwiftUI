@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE6B19AC280B3E7300971D3B /* Walkthrough.tutorial in Resources */ = {isa = PBXBuildFile; fileRef = FE6B19AB280B3E7300971D3B /* Walkthrough.tutorial */; };
+		FE6B19B1280B3EF900971D3B /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FE6B19AF280B3EF900971D3B /* Localizable.strings */; };
 		FEF1F68D27CC6F4B0071DDA2 /* temperatureConversionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF1F68C27CC6F4B0071DDA2 /* temperatureConversionApp.swift */; };
 		FEF1F68F27CC6F4B0071DDA2 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEF1F68E27CC6F4B0071DDA2 /* ContentView.swift */; };
 		FEF1F69127CC6F4C0071DDA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEF1F69027CC6F4C0071DDA2 /* Assets.xcassets */; };
@@ -14,6 +16,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE6B19AB280B3E7300971D3B /* Walkthrough.tutorial */ = {isa = PBXFileReference; lastKnownFileType = text; path = Walkthrough.tutorial; sourceTree = "<group>"; };
+		FE6B19B0280B3EF900971D3B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = Localizable.strings; sourceTree = "<group>"; };
 		FEF1F68927CC6F4B0071DDA2 /* temperatureConversion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = temperatureConversion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEF1F68C27CC6F4B0071DDA2 /* temperatureConversionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = temperatureConversionApp.swift; sourceTree = "<group>"; };
 		FEF1F68E27CC6F4B0071DDA2 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -32,9 +36,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE6B19AA280B3E6100971D3B /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				FE6B19AB280B3E7300971D3B /* Walkthrough.tutorial */,
+				FE6B19AD280B3E9F00971D3B /* Resources */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
+		FE6B19AD280B3E9F00971D3B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				FE6B19AE280B3EA500971D3B /* en.lproj */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		FE6B19AE280B3EA500971D3B /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				FE6B19AF280B3EF900971D3B /* Localizable.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
 		FEF1F68027CC6F4B0071DDA2 = {
 			isa = PBXGroup;
 			children = (
+				FE6B19AA280B3E6100971D3B /* Guide */,
 				FEF1F68B27CC6F4B0071DDA2 /* temperatureConversion */,
 				FEF1F68A27CC6F4B0071DDA2 /* Products */,
 			);
@@ -51,8 +81,8 @@
 		FEF1F68B27CC6F4B0071DDA2 /* temperatureConversion */ = {
 			isa = PBXGroup;
 			children = (
-				FEF1F68C27CC6F4B0071DDA2 /* temperatureConversionApp.swift */,
 				FEF1F68E27CC6F4B0071DDA2 /* ContentView.swift */,
+				FEF1F68C27CC6F4B0071DDA2 /* temperatureConversionApp.swift */,
 				FEF1F69027CC6F4C0071DDA2 /* Assets.xcassets */,
 				FEF1F69227CC6F4C0071DDA2 /* Preview Content */,
 			);
@@ -125,7 +155,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE6B19B1280B3EF900971D3B /* Localizable.strings in Resources */,
 				FEF1F69427CC6F4C0071DDA2 /* Preview Assets.xcassets in Resources */,
+				FE6B19AC280B3E7300971D3B /* Walkthrough.tutorial in Resources */,
 				FEF1F69127CC6F4C0071DDA2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,6 +175,17 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FE6B19AF280B3EF900971D3B /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FE6B19B0280B3EF900971D3B /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		FEF1F69527CC6F4C0071DDA2 /* Debug */ = {

@@ -1,0 +1,30 @@
+@Tutorial(time: 20) {
+    @Intro(title: "Creating Custom Tab") {
+        Run the preview and tap to select the tabs at the bottom of the screen: Gallery, Quiz, and Drawing.
+        
+        @Image(source: creating-intro.png, alt: "A wireframe of an app interafce that has an outline of a sloth and four buttons below the sloth. The buttons display the following symbols, from left to right: ice, fire, wind, and lightning.")
+    }
+    
+    @Section(title: "Create a new project and add GalleryView") {
+        @ContentAndMedia {
+            Create and configure an Xcode project. You can change all the emoji flags. While you walk through this sample.
+            
+            @Image(source: 01-creating-section1.PNG, alt: "An arrow pointing from the GalleryView framework icon to the Xcode app project icon.")
+        }
+        
+        @Steps {
+            @Step {
+                Creating a new project using the iOS App template.
+                
+                @Image(source: creating-01-01.png, alt: "A screenshot of the template selector in Xcode. In the top row, iOS is selected as the platform. In the Application section, App is selected as the template; there's a highlight placed over the Next button at the lower-right of the sheet.")
+            }
+            
+            @Step {
+                Enter "Oh My Flag" as the Product Name.
+                
+                @Image(source: creating-01-02.png, alt: "A `screenshot` of the project sheet, which shows the Product Name for the app being built as Slothy. The Interface is set to SwiftUI, and the Life Cycle is set to SwiftUI App.")
+            }
+            
+        }
+    }
+}

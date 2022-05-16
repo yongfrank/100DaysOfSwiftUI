@@ -1,0 +1,33 @@
+@GuideBook(title: "Oh My Flag", icon: title.png, background: titleBackground.png, firstFile: ContentView.swift) {
+    
+    @WelcomeMessage(title: "Oh My Flag") {
+        Hi, welcome to Oh My Flag Tutorials🥳. In this walk through, you'll learn the interface of this App created by amazing Swift Playgrounds and [SwiftUI](glossary://SwiftUI).
+    }
+    
+    @Guide {
+        @Step(title: "Introduction") {
+            @ContentAndMedia {
+                ![](intro.PNG)
+                
+                Welcome to Oh My Flag App. In this walk through, you'll learn the interface of this App created by amazing Playgrounds and [SwiftUI](glossary://SwiftUI).
+                
+                Run the preview and tap Button `Ok, I know` to select the tabs the the bottom of the screen: Gellery, Quiz and Drawing.
+                
+                You can know the composition of this app, and how the app works. After you know the logic of this app, tap play button to enjoy it! 
+                
+                @GuideButton(type: walkthrough, title: "Start Walkthrough", description: "A description for button Let's Go!")
+            }
+            
+            @Task(type: walkthrough, title: "Gallery", id: "Gallery", file: ContentView.swift) {
+                Get into the first page. Create the flags randomly or by your own hand.
+                
+                @Page(id: "1.1", title: "Gallery") {
+                    This is the first tab called gallery. As the name suggests it's a place to exhibit your beloved flags.
+                }
+            }
+        }
+    }
+}
+
+
+

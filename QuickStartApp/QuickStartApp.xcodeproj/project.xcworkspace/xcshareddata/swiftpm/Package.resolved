@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "screenshotswiftui",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/gualtierofrigerio/ScreenshotSwiftUI.git",
+      "state" : {
+        "revision" : "0808ffdb71228b7e1593512a3c1290a272d7cf54",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}

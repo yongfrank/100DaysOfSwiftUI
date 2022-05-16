@@ -46,13 +46,14 @@ struct MainScreenView: View {
                     .background(.darkBackground)
                     .foregroundColor(.secondary)
             }
+            .navigationViewStyle(.stack)
             .tabItem {
                 Label("Home", systemImage: "house")
             }
-            TestView()
-                .tabItem {
-                    Label("Test", systemImage: "hammer")
-                }
+//            TestView()
+//                .tabItem {
+//                    Label("Test", systemImage: "hammer")
+//                }
         }
         
     }
@@ -62,5 +63,6 @@ struct MainScreenView_Previews: PreviewProvider {
     static var previews: some View {
         MainScreenView()
             .preferredColorScheme(.dark)
+            .previewInterfaceOrientation(.landscapeLeft)
     }
 }

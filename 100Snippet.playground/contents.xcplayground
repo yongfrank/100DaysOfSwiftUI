@@ -15,5 +15,6 @@
         <page name='Day13-ProtocolsExtensions'/>
         <page name='Day14-Optionals'/>
         <page name='Day15-Learn-essential-swift-in-one-hour'/>
+        <page name='Hi'/>
     </pages>
 </playground>

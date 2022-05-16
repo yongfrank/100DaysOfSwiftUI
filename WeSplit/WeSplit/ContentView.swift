@@ -6,7 +6,11 @@
 //
 import SwiftUI
 
-struct ContentView: View {
+
+/// This is the headline part. Representation of User Interface
+///
+/// This is the overview part. This will create the app interface
+public struct ContentView: View {
     @State private var checkAmount = 0.0
     @State private var numberOfPeople = 2
     @State private var tipPercentage = 20
@@ -42,7 +46,7 @@ struct ContentView: View {
     
     @FocusState private var amountIsFocused: Bool
     
-    var body: some View {
+    public var body: some View {
         NavigationView {
             Form {
                 Section {

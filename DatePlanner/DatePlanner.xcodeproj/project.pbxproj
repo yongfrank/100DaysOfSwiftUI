@@ -7,20 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE87AD2128025E5800E500DC /* SFSymbolStyling.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE87AD2028025E5800E500DC /* SFSymbolStyling.swift */; };
+		FE87AD2428025FC600E500DC /* EventEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE87AD2328025FC600E500DC /* EventEditor.swift */; };
+		FE87AD262802611E00E500DC /* EventDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE87AD252802611E00E500DC /* EventDetail.swift */; };
 		FEC67F542802282B00ABDC0E /* DatePlannerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC67F532802282B00ABDC0E /* DatePlannerApp.swift */; };
 		FEC67F562802282B00ABDC0E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC67F552802282B00ABDC0E /* ContentView.swift */; };
 		FEC67F582802282D00ABDC0E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC67F572802282D00ABDC0E /* Assets.xcassets */; };
 		FEC67F5B2802282D00ABDC0E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEC67F5A2802282D00ABDC0E /* Preview Assets.xcassets */; };
 		FEC67F622802288800ABDC0E /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC67F612802288800ABDC0E /* EventList.swift */; };
+		FEC67F64280230BF00ABDC0E /* EventData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC67F63280230BF00ABDC0E /* EventData.swift */; };
+		FEC67F68280231E300ABDC0E /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC67F67280231E300ABDC0E /* Event.swift */; };
+		FEC67F6A2802344000ABDC0E /* EventTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC67F692802344000ABDC0E /* EventTask.swift */; };
+		FEC67F6C2802359200ABDC0E /* EventSymbols.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC67F6B2802359200ABDC0E /* EventSymbols.swift */; };
+		FEC67F6E2802370900ABDC0E /* ColorOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC67F6D2802370900ABDC0E /* ColorOption.swift */; };
+		FEC67F72280251EC00ABDC0E /* EventRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC67F71280251EC00ABDC0E /* EventRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE87AD2028025E5800E500DC /* SFSymbolStyling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolStyling.swift; sourceTree = "<group>"; };
+		FE87AD2328025FC600E500DC /* EventEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventEditor.swift; sourceTree = "<group>"; };
+		FE87AD252802611E00E500DC /* EventDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetail.swift; sourceTree = "<group>"; };
 		FEC67F502802282B00ABDC0E /* DatePlanner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DatePlanner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEC67F532802282B00ABDC0E /* DatePlannerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePlannerApp.swift; sourceTree = "<group>"; };
 		FEC67F552802282B00ABDC0E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FEC67F572802282D00ABDC0E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEC67F5A2802282D00ABDC0E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FEC67F612802288800ABDC0E /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
+		FEC67F63280230BF00ABDC0E /* EventData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventData.swift; sourceTree = "<group>"; };
+		FEC67F67280231E300ABDC0E /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		FEC67F692802344000ABDC0E /* EventTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTask.swift; sourceTree = "<group>"; };
+		FEC67F6B2802359200ABDC0E /* EventSymbols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventSymbols.swift; sourceTree = "<group>"; };
+		FEC67F6D2802370900ABDC0E /* ColorOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorOption.swift; sourceTree = "<group>"; };
+		FEC67F71280251EC00ABDC0E /* EventRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +52,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE87AD2228025F8000E500DC /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				FEC67F6D2802370900ABDC0E /* ColorOption.swift */,
+				FE87AD2028025E5800E500DC /* SFSymbolStyling.swift */,
+				FEC67F6B2802359200ABDC0E /* EventSymbols.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		FEC67F472802282B00ABDC0E = {
 			isa = PBXGroup;
 			children = (
@@ -54,9 +82,11 @@
 			isa = PBXGroup;
 			children = (
 				FEC67F532802282B00ABDC0E /* DatePlannerApp.swift */,
-				FEC67F612802288800ABDC0E /* EventList.swift */,
-				FEC67F552802282B00ABDC0E /* ContentView.swift */,
+				FEC67F66280231C100ABDC0E /* View */,
+				FE87AD2228025F8000E500DC /* Helper */,
+				FEC67F65280231B300ABDC0E /* Model */,
 				FEC67F572802282D00ABDC0E /* Assets.xcassets */,
+				FEC67F552802282B00ABDC0E /* ContentView.swift */,
 				FEC67F592802282D00ABDC0E /* Preview Content */,
 			);
 			path = DatePlanner;
@@ -68,6 +98,27 @@
 				FEC67F5A2802282D00ABDC0E /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FEC67F65280231B300ABDC0E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEC67F63280230BF00ABDC0E /* EventData.swift */,
+				FEC67F67280231E300ABDC0E /* Event.swift */,
+				FEC67F692802344000ABDC0E /* EventTask.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEC67F66280231C100ABDC0E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FEC67F612802288800ABDC0E /* EventList.swift */,
+				FEC67F71280251EC00ABDC0E /* EventRow.swift */,
+				FE87AD2328025FC600E500DC /* EventEditor.swift */,
+				FE87AD252802611E00E500DC /* EventDetail.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,9 +191,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FEC67F6C2802359200ABDC0E /* EventSymbols.swift in Sources */,
+				FEC67F72280251EC00ABDC0E /* EventRow.swift in Sources */,
 				FEC67F622802288800ABDC0E /* EventList.swift in Sources */,
 				FEC67F562802282B00ABDC0E /* ContentView.swift in Sources */,
+				FEC67F64280230BF00ABDC0E /* EventData.swift in Sources */,
+				FE87AD262802611E00E500DC /* EventDetail.swift in Sources */,
+				FEC67F6E2802370900ABDC0E /* ColorOption.swift in Sources */,
+				FEC67F6A2802344000ABDC0E /* EventTask.swift in Sources */,
 				FEC67F542802282B00ABDC0E /* DatePlannerApp.swift in Sources */,
+				FE87AD2428025FC600E500DC /* EventEditor.swift in Sources */,
+				FEC67F68280231E300ABDC0E /* Event.swift in Sources */,
+				FE87AD2128025E5800E500DC /* SFSymbolStyling.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

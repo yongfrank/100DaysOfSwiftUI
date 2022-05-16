@@ -1,0 +1,15 @@
+@Tutorials(name: "Tips By Frank") {
+    @Intro(title: "Meet Tips") {
+        Here are some tips made by Frank!
+        
+        @Image(source: tips-intro.jpeg, alt: "A intro image which a Xcode in the center of image")
+    }
+    
+    @Chapter(name: "Some Simple Tips") {
+        Here are some simple things like alert and confirmationDialog.
+        
+        @Image(source: tips-intro.jpeg, alt: "A intro image which a Xcode in the center of image")
+        
+        @TutorialReference(tutorial: "doc:Simple-Tips")
+    }
+}

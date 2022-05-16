@@ -1,0 +1,16 @@
+@Tutorials(name: "Oh My Flag App") {
+    @Intro(title: "Exploring SwiftUI App: Oh My Flag") {
+        Explore the SwiftUI App using Swift Playgrounds on iPad or in Xcode. In this walkthrough, you’ll learn the composition of Oh My Flag app. Enjoy it!
+        
+        @Image(source: slothcreator-intro.png, alt: "An arrow pointing from the GalleryView framework icon to the Xcode app project icon.")
+    }
+    
+    @Chapter(name: "Tabbed Interface") {
+        
+        @Image(source: chapter1-slothcreatorEssentials.png, alt: "A wireframe of an app interface that has an outline of a sloth and four buttons below the sloth. The buttons display the following symbols, from left to right: snowflake, fire, wind, and lightning")
+        
+        Getting to know the interface
+        
+        @TutorialReference(tutorial: "doc:Tabbed-Interface")
+    }
+}

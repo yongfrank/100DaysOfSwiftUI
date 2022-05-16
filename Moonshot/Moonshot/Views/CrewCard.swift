@@ -34,15 +34,12 @@ struct CrewCard: View {
                                 Text(crewMember.role)
                                     .foregroundColor(.secondary)
                             }
-                        
                         }
                         .padding(.horizontal)
-                    
                     }
                 }
             }
         }
-    
     }
     
     init(mission: Mission, astronauts: [String: Astronaut]) {

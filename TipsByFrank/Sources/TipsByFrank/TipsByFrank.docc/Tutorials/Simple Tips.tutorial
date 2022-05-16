@@ -1,0 +1,33 @@
+@Tutorial(time: 5) {
+    @Intro(title: "Simple Tips") {
+        Let's dive into simple tips!
+        
+        @Image(source: tips-intro.jpeg, alt: "A intro image which a Xcode in the center of image")
+    }
+    
+    @Section(title: "confirmationDialog") {
+        @ContentAndMedia {
+            confirmationDialog is used in Photo app when you delete photo!
+            
+            @Image(source: tips-intro.jpeg, alt: "A intro image which a Xcode in the center of image")
+        }
+        
+        @Steps {
+            @Step {
+                Create a new SwiftUI View file and put these code inside your page! The confirmationDialog is used in Photo app when you delete photo!
+
+                @Code(name: "ContentView.swift", file: 01-simple-tips-01-01.swift) {
+                    @Image(source: tips-intro.jpeg, alt: "A intro image which a Xcode in the center of image")
+                }
+            }
+            @Step {
+                Try to change confirmationDialog to alert
+
+                @Code(name: "ContentView.swift", file: 01-simple-tips-01-02.swift) {
+                    @Image(source: tips-intro.jpeg, alt: "A intro image which a Xcode in the center of image")
+                }
+            }
+            
+        }
+    }
+}
