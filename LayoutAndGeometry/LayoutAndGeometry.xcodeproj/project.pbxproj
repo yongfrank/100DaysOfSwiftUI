@@ -16,6 +16,7 @@
 		FEB4AC4228446078006360F2 /* Day92-3-how-to-create-a-custom-alignment-guide.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4AC4128446078006360F2 /* Day92-3-how-to-create-a-custom-alignment-guide.swift */; };
 		FEB4AC442845BBD3006360F2 /* Day93-1-absolute-positioning-for-swiftui-views.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4AC432845BBD3006360F2 /* Day93-1-absolute-positioning-for-swiftui-views.swift */; };
 		FEB4AC4628474C89006360F2 /* Day93-2-understanding-frames-and-coordinates-inside-geometryreader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB4AC4528474C89006360F2 /* Day93-2-understanding-frames-and-coordinates-inside-geometryreader.swift */; };
+		FED21CEC284B288A006C15FE /* Day93-3-scrollview-effects-using-geometryreader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED21CEB284B288A006C15FE /* Day93-3-scrollview-effects-using-geometryreader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		FEB4AC4128446078006360F2 /* Day92-3-how-to-create-a-custom-alignment-guide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day92-3-how-to-create-a-custom-alignment-guide.swift"; sourceTree = "<group>"; };
 		FEB4AC432845BBD3006360F2 /* Day93-1-absolute-positioning-for-swiftui-views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day93-1-absolute-positioning-for-swiftui-views.swift"; sourceTree = "<group>"; };
 		FEB4AC4528474C89006360F2 /* Day93-2-understanding-frames-and-coordinates-inside-geometryreader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day93-2-understanding-frames-and-coordinates-inside-geometryreader.swift"; sourceTree = "<group>"; };
+		FED21CEB284B288A006C15FE /* Day93-3-scrollview-effects-using-geometryreader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Day93-3-scrollview-effects-using-geometryreader.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 			children = (
 				FE0E842528407CB300051163 /* LayoutAndGeometryApp.swift */,
 				FE0E842728407CB300051163 /* ContentView.swift */,
+				FED21CEB284B288A006C15FE /* Day93-3-scrollview-effects-using-geometryreader.swift */,
 				FEB4AC4528474C89006360F2 /* Day93-2-understanding-frames-and-coordinates-inside-geometryreader.swift */,
 				FEB4AC432845BBD3006360F2 /* Day93-1-absolute-positioning-for-swiftui-views.swift */,
 				FEB4AC4128446078006360F2 /* Day92-3-how-to-create-a-custom-alignment-guide.swift */,
@@ -157,6 +160,7 @@
 				FE0E843628407FAA00051163 /* Day92-2-alignment-and-alignment-guides.swift in Sources */,
 				FE0E842828407CB300051163 /* ContentView.swift in Sources */,
 				FEB4AC4628474C89006360F2 /* Day93-2-understanding-frames-and-coordinates-inside-geometryreader.swift in Sources */,
+				FED21CEC284B288A006C15FE /* Day93-3-scrollview-effects-using-geometryreader.swift in Sources */,
 				FE0E842628407CB300051163 /* LayoutAndGeometryApp.swift in Sources */,
 				FEB4AC4228446078006360F2 /* Day92-3-how-to-create-a-custom-alignment-guide.swift in Sources */,
 			);

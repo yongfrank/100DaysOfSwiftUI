@@ -8,5 +8,7 @@ while roll != 6 {
     print(roll)
 }
 
+var a = "1e2345"
+let digits = /\d+/
 
 //: [Enums](Enumerations)

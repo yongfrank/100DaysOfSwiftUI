@@ -11,7 +11,7 @@ import SwiftUI
 struct LayoutAndGeometryApp: App {
     var body: some Scene {
         WindowGroup {
-            Day93_2_understanding_frames_and_coordinates_inside_geometryreader()
+            ContentView()
         }
     }
 }

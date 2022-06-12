@@ -18,6 +18,8 @@ struct Day93_2_understanding_frames_and_coordinates_inside_geometryreader: View 
 //            Text("More text")
 //                .background(.blue)
 //        }
+        
+//        Text("HI")
         OuterView()
             .background(.red)
 //            .coordinateSpace(name: "Custom")
@@ -39,6 +41,7 @@ struct InnerView: View {
     var body: some View {
         HStack {
             Text("Left")
+            
             GeometryReader { geo in
                 Text("Center")
                     .background(.blue)
@@ -48,6 +51,7 @@ struct InnerView: View {
                         print("Global center: \(geo.frame(in: .global).midX) x \(geo.frame(in: .global).midY)")
                     }
             }
+            .background(.orange)
             Text("Right")
         }
     }
