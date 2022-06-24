@@ -9,12 +9,34 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+//        NavigationView {
+//            Text("HI")
+//            NavigationView {
+//                NavigationLink {
+//                    Text("HI")
+//                        .navigationBarHidden(true)
+//                } label: {
+//                    Text("push me")
+//                }
+//            }
+//        }
+        NavigationView {
+            NavigationLink {
+                Text("Hello world!")
+                    .navigationBarHidden(true)
+            } label: {
+                Text("Hello, World!")
+            }
+            .navigationTitle("Primary")
+            Text("Secondary")
+            Text("Tertiary")
         }
+//        NavigationSplitView {
+//            Text("Hello")
+//                .navigationTitle("Primary")
+//        } detail: {
+//            Text("HI")
+//        }
     }
 }
 
