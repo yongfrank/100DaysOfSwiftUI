@@ -12,6 +12,7 @@
 		FE0955452817B46F0074CFCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0955442817B46F0074CFCD /* Assets.xcassets */; };
 		FE0955482817B46F0074CFCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0955472817B46F0074CFCD /* Preview Assets.xcassets */; };
 		FE0955512817B4900074CFCD /* MotionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0955502817B4900074CFCD /* MotionManager.swift */; };
+		FEC66B14285788AD00A9F42A /* Particle.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC66B13285788AD00A9F42A /* Particle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		FE0955442817B46F0074CFCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE0955472817B46F0074CFCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE0955502817B4900074CFCD /* MotionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MotionManager.swift; sourceTree = "<group>"; };
+		FEC66B13285788AD00A9F42A /* Particle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Particle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 				FE0955402817B46D0074CFCD /* MotionApp.swift */,
 				FE0955422817B46D0074CFCD /* ContentView.swift */,
 				FE0955502817B4900074CFCD /* MotionManager.swift */,
+				FEC66B13285788AD00A9F42A /* Particle.swift */,
 				FE0955442817B46F0074CFCD /* Assets.xcassets */,
 				FE0955462817B46F0074CFCD /* Preview Content */,
 			);
@@ -141,6 +144,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE0955432817B46D0074CFCD /* ContentView.swift in Sources */,
+				FEC66B14285788AD00A9F42A /* Particle.swift in Sources */,
 				FE0955512817B4900074CFCD /* MotionManager.swift in Sources */,
 				FE0955412817B46D0074CFCD /* MotionApp.swift in Sources */,
 			);
@@ -274,6 +278,7 @@
 				DEVELOPMENT_TEAM = ST3F674BZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "We need use your motion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -284,7 +289,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.Chu.Frank.Motion;
+				PRODUCT_BUNDLE_IDENTIFIER = me.frank.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -303,6 +308,7 @@
 				DEVELOPMENT_TEAM = ST3F674BZF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSMotionUsageDescription = "We need use your motion";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -313,7 +319,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = me.Chu.Frank.Motion;
+				PRODUCT_BUNDLE_IDENTIFIER = me.frank.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

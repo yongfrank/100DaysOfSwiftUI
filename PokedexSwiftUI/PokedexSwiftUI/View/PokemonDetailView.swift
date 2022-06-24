@@ -37,7 +37,24 @@ struct PokemonDetailView: View {
                 KFImage(URL(string: pokemon.imageUrl))
                     .resizable()
                     .frame(width: 200, height: 200)
+                
+                
                 VStack {
+                    AsyncImage(url: URL(string: pokemon.imageUrl)) { image in
+                        image.resizable()
+                    } placeholder: {
+                        ProgressView()
+                    }
+                        .frame(width: 200, height: 200)
+                    AsyncImage(url: URL(string: "https://hws.dev/img/logo.png")) { image in
+                        image
+                            .resizable()
+                            .scaledToFit()
+                    } placeholder: {
+                        Color.red
+                    }
+                    .frame(width: 200, height: 200)
+                    
                     Text(pokemon.name.capitalized)
                         .font(.largeTitle)
                         .padding(.top, 40)

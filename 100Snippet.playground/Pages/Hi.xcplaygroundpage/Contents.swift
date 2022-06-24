@@ -1,22 +1,22 @@
-//: [Previous](@previous)
-
-import Foundation
-
-var greeting = "Hello, playground"
-
-import SwiftUI
-
-
-let cfstr = NSMutableString(string: "This 😄 is my string 😄") as CFMutableString
-func transformUnicode(_ input : String) -> String {
-    let cfstr = NSMutableString(string: input) as CFMutableString
-    var range = CFRangeMake(0, CFStringGetLength(cfstr))
-    CFStringTransform(cfstr, &range, kCFStringTransformToUnicodeName, Bool(0))
-    let newStr = "\(cfstr)"
-    return newStr.stringByReplacingOccurrencesOfString("\\N", withString:"")
+protocol MyProtocol {
+    
 }
 
-transformUnicode("This 😄 is my string 😄")
+struct MyStruct: MyProtocol {
+    
+}
 
 
-//: [Next](@next)
+//extension MyStruct {
+//    func extensionMethod() { print("结构体") }
+//}
+
+extension MyProtocol {
+    func extensionMethod() { print("协议") }
+}
+
+let myStruct = MyStruct()
+myStruct.extensionMethod() // -> “结构体”
+
+let proto: MyProtocol = myStruct
+proto.extensionMethod() // -> “协议”
