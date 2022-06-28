@@ -12,6 +12,7 @@
 		FEA89C9627E034AF00EAA7EC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA89C9527E034AF00EAA7EC /* Assets.xcassets */; };
 		FEA89C9927E034AF00EAA7EC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEA89C9827E034AF00EAA7EC /* Preview Assets.xcassets */; };
 		FEA89CA027E036A700EAA7EC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEA89C9F27E036A700EAA7EC /* User.swift */; };
+		FEB538182869BAB900642B7F /* onDelete.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB538172869BAB900642B7F /* onDelete.swift */; };
 		FEC7063627E0A62F007E428D /* SecondView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7063527E0A62F007E428D /* SecondView.swift */; };
 		FEC7063827E0B3D9007E428D /* onDeleteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7063727E0B3D9007E428D /* onDeleteView.swift */; };
 		FEC7063A27E0B7DE007E428D /* UserDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEC7063927E0B7DE007E428D /* UserDefaultView.swift */; };
@@ -32,6 +33,7 @@
 		FEA89C9527E034AF00EAA7EC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FEA89C9827E034AF00EAA7EC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FEA89C9F27E036A700EAA7EC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		FEB538172869BAB900642B7F /* onDelete.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onDelete.swift; sourceTree = "<group>"; };
 		FEC7063527E0A62F007E428D /* SecondView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondView.swift; sourceTree = "<group>"; };
 		FEC7063727E0B3D9007E428D /* onDeleteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = onDeleteView.swift; sourceTree = "<group>"; };
 		FEC7063927E0B7DE007E428D /* UserDefaultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultView.swift; sourceTree = "<group>"; };
@@ -123,6 +125,7 @@
 				FEC7064827E0D7E3007E428D /* iExpenseList.swift */,
 				FEC7065027E0E8C1007E428D /* ExpenseRow.swift */,
 				FEC7064E27E0DE91007E428D /* AddView.swift */,
+				FEB538172869BAB900642B7F /* onDelete.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -204,6 +207,7 @@
 				FEA89C9227E034AC00EAA7EC /* iExpenseApp.swift in Sources */,
 				FEC7063627E0A62F007E428D /* SecondView.swift in Sources */,
 				FEC7063A27E0B7DE007E428D /* UserDefaultView.swift in Sources */,
+				FEB538182869BAB900642B7F /* onDelete.swift in Sources */,
 				FEC7065127E0E8C1007E428D /* ExpenseRow.swift in Sources */,
 				FEC7064227E0D5E8007E428D /* ExpenseItem.swift in Sources */,
 				FEC7063E27E0BA7E007E428D /* UserSwift.swift in Sources */,

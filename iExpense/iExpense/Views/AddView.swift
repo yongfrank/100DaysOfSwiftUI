@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+
 struct AddView: View {
     @State private var name = ""
     @State private var type = "Personal"
