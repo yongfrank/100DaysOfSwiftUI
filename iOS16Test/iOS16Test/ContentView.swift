@@ -62,6 +62,7 @@ struct ContentView: View {
     var body: some View {
         VStack {
             Text("HI")
+            Text("hi")
             List(results.results, id: \.trackId) { item in
                 VStack(alignment: .leading) {
                     Text(item.trackName)

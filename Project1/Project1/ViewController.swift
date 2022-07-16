@@ -15,7 +15,6 @@ class ViewController: UITableViewController {
         super.viewDidLoad()
         
         // MARK: - Additional setup after loading the view.
-        // Do any additional setup after loading the view.
         
         title = "Storm Viewer"
         navigationController?.navigationBar.prefersLargeTitles = true
@@ -28,10 +27,10 @@ class ViewController: UITableViewController {
         for item in items {
             if item.hasPrefix("nssl") {
                 pictures.append(item)
-                
             }
         }
-        print(pictures)
+        pictures.sort()
+        print("DEBUG: pictures", pictures)
     }
     
     
@@ -47,8 +46,11 @@ class ViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // vc means ViewController
         if let vc = storyboard?.instantiateViewController(withIdentifier: "Detail") as? DetailViewController {
             vc.selectedImage = pictures[indexPath.row]
+            vc.selectedPictureNumber = indexPath.row + 1
+            vc.totalPictures = pictures.count
             navigationController?.pushViewController(vc, animated: true)
         }
     }

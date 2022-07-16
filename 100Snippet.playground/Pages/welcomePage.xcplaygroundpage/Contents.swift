@@ -9,6 +9,6 @@ while roll != 6 {
 }
 
 var a = "1e2345"
-let digits = /\d+/
+
 
 //: [Enums](Enumerations)

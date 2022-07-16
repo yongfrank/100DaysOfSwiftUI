@@ -24,6 +24,7 @@
 		FEFD749F286B4AB600B4C19C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = FEFD749E286B4AB600B4C19C /* FirebaseFirestore */; };
 		FEFD74A1286B4AB600B4C19C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FEFD74A0286B4AB600B4C19C /* FirebaseFirestoreSwift */; };
 		FEFD74A4286B5F9400B4C19C /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD74A3286B5F9400B4C19C /* UserService.swift */; };
+		FEFD74A7286B6CBC00B4C19C /* Challenge.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEFD74A6286B6CBC00B4C19C /* Challenge.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +42,7 @@
 		FEFD7495286B17ED00B4C19C /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		FEFD7497286B48D300B4C19C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		FEFD74A3286B5F9400B4C19C /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
+		FEFD74A6286B6CBC00B4C19C /* Challenge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Challenge.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		FE06FAD2286B06CA003B40D7 /* Increment */ = {
 			isa = PBXGroup;
 			children = (
+				FEFD74A5286B6CAA00B4C19C /* Models */,
 				FE06FAD3286B06CA003B40D7 /* IncrementApp.swift */,
 				FEFD74A2286B5F8800B4C19C /* Services */,
 				FEFD7497286B48D300B4C19C /* GoogleService-Info.plist */,
@@ -116,6 +119,14 @@
 				FEFD74A3286B5F9400B4C19C /* UserService.swift */,
 			);
 			path = Services;
+			sourceTree = "<group>";
+		};
+		FEFD74A5286B6CAA00B4C19C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FEFD74A6286B6CBC00B4C19C /* Challenge.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -202,6 +213,7 @@
 				FEFD7487286B096800B4C19C /* LandingView.swift in Sources */,
 				FE06FAD4286B06CA003B40D7 /* IncrementApp.swift in Sources */,
 				FEFD7494286B170600B4C19C /* DropdownItemProtocol.swift in Sources */,
+				FEFD74A7286B6CBC00B4C19C /* Challenge.swift in Sources */,
 				FEFD748B286B0B8C00B4C19C /* Color+Extension.swift in Sources */,
 				FEFD7491286B13B100B4C19C /* RemindView.swift in Sources */,
 				FEFD74A4286B5F9400B4C19C /* UserService.swift in Sources */,

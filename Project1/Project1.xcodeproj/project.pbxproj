@@ -83,8 +83,8 @@
 				FE9F7509281D413300C7C69F /* ViewController.swift */,
 				FE1EE693281D9D6800EBAB4E /* DetailViewController.swift */,
 				FE9F750B281D413300C7C69F /* Main.storyboard */,
-				FE9F750E281D413400C7C69F /* Assets.xcassets */,
 				FE9F7510281D413400C7C69F /* LaunchScreen.storyboard */,
+				FE9F750E281D413400C7C69F /* Assets.xcassets */,
 				FE9F7513281D413400C7C69F /* Info.plist */,
 				FE9F7519281D434000C7C69F /* Content */,
 			);

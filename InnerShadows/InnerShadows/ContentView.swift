@@ -40,7 +40,6 @@ struct ContentView: View {
                         )
                 )
                 .font(.system(size: 300).bold())
-            
         }
     }
 }
