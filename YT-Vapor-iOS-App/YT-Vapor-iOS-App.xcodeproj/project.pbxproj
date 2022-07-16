@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FE5E4351287FAC1B001E7E2B /* YT_Vapor_iOS_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5E4350287FAC1B001E7E2B /* YT_Vapor_iOS_AppApp.swift */; };
+		FE5E4353287FAC1B001E7E2B /* SongList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5E4352287FAC1B001E7E2B /* SongList.swift */; };
+		FE5E4355287FAC1B001E7E2B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5E4354287FAC1B001E7E2B /* Assets.xcassets */; };
+		FE5E4358287FAC1B001E7E2B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE5E4357287FAC1B001E7E2B /* Preview Assets.xcassets */; };
+		FE5E4363287FAC98001E7E2B /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5E4362287FAC98001E7E2B /* Song.swift */; };
+		FE5E4366287FACE2001E7E2B /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5E4365287FACE2001E7E2B /* SongListViewModel.swift */; };
+		FE5E4368287FAEAF001E7E2B /* HttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5E4367287FAEAF001E7E2B /* HttpClient.swift */; };
+		FE9D94C1287FB5E4004E7EB2 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9D94C0287FB5E4004E7EB2 /* Constants.swift */; };
+		FE9D94C3287FD74F004E7EB2 /* ModalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9D94C2287FD74F004E7EB2 /* ModalType.swift */; };
+		FE9D94C5287FE4A6004E7EB2 /* AddUpdateSong.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9D94C4287FE4A6004E7EB2 /* AddUpdateSong.swift */; };
+		FE9D94C7287FE4DB004E7EB2 /* AddUpdateSongViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE9D94C6287FE4DB004E7EB2 /* AddUpdateSongViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FE5E434D287FAC1B001E7E2B /* YT-Vapor-iOS-App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "YT-Vapor-iOS-App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FE5E4350287FAC1B001E7E2B /* YT_Vapor_iOS_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YT_Vapor_iOS_AppApp.swift; sourceTree = "<group>"; };
+		FE5E4352287FAC1B001E7E2B /* SongList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongList.swift; sourceTree = "<group>"; };
+		FE5E4354287FAC1B001E7E2B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FE5E4357287FAC1B001E7E2B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FE5E4362287FAC98001E7E2B /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		FE5E4365287FACE2001E7E2B /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
+		FE5E4367287FAEAF001E7E2B /* HttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpClient.swift; sourceTree = "<group>"; };
+		FE9D94C0287FB5E4004E7EB2 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		FE9D94C2287FD74F004E7EB2 /* ModalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalType.swift; sourceTree = "<group>"; };
+		FE9D94C4287FE4A6004E7EB2 /* AddUpdateSong.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSong.swift; sourceTree = "<group>"; };
+		FE9D94C6287FE4DB004E7EB2 /* AddUpdateSongViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddUpdateSongViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FE5E434A287FAC1A001E7E2B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FE5E4344287FAC1A001E7E2B = {
+			isa = PBXGroup;
+			children = (
+				FE5E434F287FAC1B001E7E2B /* YT-Vapor-iOS-App */,
+				FE5E434E287FAC1B001E7E2B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FE5E434E287FAC1B001E7E2B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E434D287FAC1B001E7E2B /* YT-Vapor-iOS-App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FE5E434F287FAC1B001E7E2B /* YT-Vapor-iOS-App */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E435E287FAC3F001E7E2B /* Models */,
+				FE5E4360287FAC4B001E7E2B /* Views */,
+				FE5E435F287FAC44001E7E2B /* View Models */,
+				FE5E4361287FAC54001E7E2B /* Utilities */,
+				FE5E4350287FAC1B001E7E2B /* YT_Vapor_iOS_AppApp.swift */,
+				FE5E4354287FAC1B001E7E2B /* Assets.xcassets */,
+				FE5E4356287FAC1B001E7E2B /* Preview Content */,
+			);
+			path = "YT-Vapor-iOS-App";
+			sourceTree = "<group>";
+		};
+		FE5E4356287FAC1B001E7E2B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E4357287FAC1B001E7E2B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FE5E435E287FAC3F001E7E2B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E4362287FAC98001E7E2B /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE5E435F287FAC44001E7E2B /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E4365287FACE2001E7E2B /* SongListViewModel.swift */,
+				FE9D94C6287FE4DB004E7EB2 /* AddUpdateSongViewModel.swift */,
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		FE5E4360287FAC4B001E7E2B /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE5E4352287FAC1B001E7E2B /* SongList.swift */,
+				FE9D94C4287FE4A6004E7EB2 /* AddUpdateSong.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE5E4361287FAC54001E7E2B /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FE9D94C0287FB5E4004E7EB2 /* Constants.swift */,
+				FE5E4367287FAEAF001E7E2B /* HttpClient.swift */,
+				FE9D94C2287FD74F004E7EB2 /* ModalType.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FE5E434C287FAC1B001E7E2B /* YT-Vapor-iOS-App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FE5E435B287FAC1B001E7E2B /* Build configuration list for PBXNativeTarget "YT-Vapor-iOS-App" */;
+			buildPhases = (
+				FE5E4349287FAC1A001E7E2B /* Sources */,
+				FE5E434A287FAC1A001E7E2B /* Frameworks */,
+				FE5E434B287FAC1A001E7E2B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "YT-Vapor-iOS-App";
+			productName = "YT-Vapor-iOS-App";
+			productReference = FE5E434D287FAC1B001E7E2B /* YT-Vapor-iOS-App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FE5E4345287FAC1A001E7E2B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					FE5E434C287FAC1B001E7E2B = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = FE5E4348287FAC1A001E7E2B /* Build configuration list for PBXProject "YT-Vapor-iOS-App" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FE5E4344287FAC1A001E7E2B;
+			productRefGroup = FE5E434E287FAC1B001E7E2B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FE5E434C287FAC1B001E7E2B /* YT-Vapor-iOS-App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FE5E434B287FAC1A001E7E2B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5E4358287FAC1B001E7E2B /* Preview Assets.xcassets in Resources */,
+				FE5E4355287FAC1B001E7E2B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FE5E4349287FAC1A001E7E2B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FE5E4368287FAEAF001E7E2B /* HttpClient.swift in Sources */,
+				FE9D94C7287FE4DB004E7EB2 /* AddUpdateSongViewModel.swift in Sources */,
+				FE9D94C5287FE4A6004E7EB2 /* AddUpdateSong.swift in Sources */,
+				FE9D94C3287FD74F004E7EB2 /* ModalType.swift in Sources */,
+				FE5E4363287FAC98001E7E2B /* Song.swift in Sources */,
+				FE5E4366287FACE2001E7E2B /* SongListViewModel.swift in Sources */,
+				FE5E4353287FAC1B001E7E2B /* SongList.swift in Sources */,
+				FE5E4351287FAC1B001E7E2B /* YT_Vapor_iOS_AppApp.swift in Sources */,
+				FE9D94C1287FB5E4004E7EB2 /* Constants.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FE5E4359287FAC1B001E7E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FE5E435A287FAC1B001E7E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FE5E435C287FAC1B001E7E2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YT-Vapor-iOS-App/Preview Content\"";
+				DEVELOPMENT_TEAM = ST3F674BZF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yongfrank.YT-Vapor-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FE5E435D287FAC1B001E7E2B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"YT-Vapor-iOS-App/Preview Content\"";
+				DEVELOPMENT_TEAM = ST3F674BZF;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.yongfrank.YT-Vapor-iOS-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FE5E4348287FAC1A001E7E2B /* Build configuration list for PBXProject "YT-Vapor-iOS-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5E4359287FAC1B001E7E2B /* Debug */,
+				FE5E435A287FAC1B001E7E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FE5E435B287FAC1B001E7E2B /* Build configuration list for PBXNativeTarget "YT-Vapor-iOS-App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FE5E435C287FAC1B001E7E2B /* Debug */,
+				FE5E435D287FAC1B001E7E2B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FE5E4345287FAC1A001E7E2B /* Project object */;
+}
