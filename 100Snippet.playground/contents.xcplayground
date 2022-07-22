@@ -17,5 +17,6 @@
         <page name='Day15-Learn-essential-swift-in-one-hour'/>
         <page name='Hi'/>
         <page name='enum'/>
+        <page name='11.xcplaygroundpage'/>
     </pages>
 </playground>
