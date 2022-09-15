@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="UltimatePortfolio/en.lproj/Localizable.strings" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.0" build-num="14A5228q"/>
+    </header>
+    <body>
+      <trans-unit id="Accessibility Portfolio" xml:space="preserve">
+        <source>Accessibility Portfolio</source>
+        <target>无障碍包</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Add project" xml:space="preserve">
+        <source>Add project</source>
+        <target>添加项目</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+      <trans-unit id="Apple" xml:space="preserve">
+        <source>Apple</source>
+        <target>苹果</target>
+        <note>Localizable.strings
+  UltimatePortfolio
+
+  Created by Frank Chu on 8/27/22.</note>
+      </trans-unit>
+      <trans-unit id="Banana" xml:space="preserve">
+        <source>Banana</source>
+        <target>香蕉</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Cucumber" xml:space="preserve">
+        <source>Cucumber</source>
+        <target>黄瓜</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="Orange" xml:space="preserve">
+        <source>Orange</source>
+        <target>橙子</target>
+        <note/>
+      </trans-unit>
+      <trans-unit id="this is answer" xml:space="preserve">
+        <source>this is answer</source>
+        <target>这个是答案</target>
+        <note>No comment provided by engineer.</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="UltimatePortfolio/en.lproj/UltimatePortfolio-InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="14.0" build-num="14A5228q"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleName" xml:space="preserve">
+        <source>UltimatePortfolio</source>
+        <note>Bundle name</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

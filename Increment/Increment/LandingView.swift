@@ -7,10 +7,11 @@
 
 import SwiftUI
 
+@available(iOS 16, *)
 struct LandingView: View {
     @State private var isActive = false
     var body: some View {
-        NavigationView {
+        NavigationStack {
             GeometryReader { proxy in
                 VStack {
                     Spacer().frame(height: proxy.size.height * 0.25)

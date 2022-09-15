@@ -13,6 +13,8 @@
 		FE4C5FA628B7185A0055E844 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4C5FA528B7185A0055E844 /* Assets.xcassets */; };
 		FE4C5FA928B7185A0055E844 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE4C5FA828B7185A0055E844 /* Preview Assets.xcassets */; };
 		FE4C5FCC28B75B370055E844 /* ChartsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4C5FCB28B75B370055E844 /* ChartsView.swift */; };
+		FE8C493D28C0FE9200A73D00 /* ChartViewDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C493C28C0FE9200A73D00 /* ChartViewDemo.swift */; };
+		FE8C493F28C104F100A73D00 /* DemoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8C493E28C104F100A73D00 /* DemoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +25,8 @@
 		FE4C5FA528B7185A0055E844 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE4C5FA828B7185A0055E844 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE4C5FCB28B75B370055E844 /* ChartsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartsView.swift; sourceTree = "<group>"; };
+		FE8C493C28C0FE9200A73D00 /* ChartViewDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartViewDemo.swift; sourceTree = "<group>"; };
+		FE8C493E28C104F100A73D00 /* DemoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DemoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -39,7 +43,11 @@
 		FE31D04D28B764CF005EE8FE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				FE4C5FA328B718580055E844 /* ContentView.swift */,
+				FE8C493C28C0FE9200A73D00 /* ChartViewDemo.swift */,
 				FE31D04E28B764D5005EE8FE /* Home.swift */,
+				FE4C5FCB28B75B370055E844 /* ChartsView.swift */,
+				FE8C493E28C104F100A73D00 /* DemoView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -63,10 +71,8 @@
 		FE4C5FA028B718580055E844 /* SwiftChartsDemo */ = {
 			isa = PBXGroup;
 			children = (
-				FE31D04D28B764CF005EE8FE /* View */,
 				FE4C5FA128B718580055E844 /* SwiftChartsDemoApp.swift */,
-				FE4C5FA328B718580055E844 /* ContentView.swift */,
-				FE4C5FCB28B75B370055E844 /* ChartsView.swift */,
+				FE31D04D28B764CF005EE8FE /* View */,
 				FE4C5FA528B7185A0055E844 /* Assets.xcassets */,
 				FE4C5FA728B7185A0055E844 /* Preview Content */,
 			);
@@ -152,6 +158,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE4C5FA428B718580055E844 /* ContentView.swift in Sources */,
+				FE8C493F28C104F100A73D00 /* DemoView.swift in Sources */,
+				FE8C493D28C0FE9200A73D00 /* ChartViewDemo.swift in Sources */,
 				FE4C5FA228B718580055E844 /* SwiftChartsDemoApp.swift in Sources */,
 				FE31D04F28B764D5005EE8FE /* Home.swift in Sources */,
 				FE4C5FCC28B75B370055E844 /* ChartsView.swift in Sources */,

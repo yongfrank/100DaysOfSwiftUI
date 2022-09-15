@@ -22,5 +22,5 @@ struct ChatUser: Identifiable, Hashable {
         self.profileImageUrl = data[DataDic.profileImageUrl] as? String ?? ""
     }
     
-    static let example = ChatUser(data: ["uid": "fZqhhKKN7dVguiYQC1NuuF69WRZ2", "email": "Pikachu@EXAMPLE.com", "profileImageUrl": "https://firebasestorage.googleapis.com:443/v0/b/lbta-swiftui-firebase-ch-e575b.appspot.com/o/FgZ1nd2rSFNi5ys2U9U9VJyxUTW2?alt=media&token=88470946-cbfc-4188-90cc-b5ba9642a1f5"])
+    static let example = ChatUser(data: ["uid": "fZqhhKKN7dVguiYQC1NuuF69WRZ2", "email": "EXAMPLE@EXAMPLE.com", "profileImageUrl": "https://via.placeholder.com/150"])
 }
