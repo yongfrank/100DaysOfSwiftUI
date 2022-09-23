@@ -104,9 +104,9 @@
 			children = (
 				FE126C1628B88C34000E0B64 /* ConnectivitySwiftUIApp.swift */,
 				FE126C1828B88C34000E0B64 /* ContentView.swift */,
+				FE126C3A28B88CBD000E0B64 /* ViewModelPhone.swift */,
 				FE126C1A28B88C35000E0B64 /* Assets.xcassets */,
 				FE126C1C28B88C35000E0B64 /* Preview Content */,
-				FE126C3A28B88CBD000E0B64 /* ViewModelPhone.swift */,
 			);
 			path = ConnectivitySwiftUI;
 			sourceTree = "<group>";
@@ -124,9 +124,9 @@
 			children = (
 				FE126C2828B88C35000E0B64 /* ConnectivitySwiftUIApp.swift */,
 				FE126C2A28B88C35000E0B64 /* ContentView.swift */,
+				FE126C3C28B88F57000E0B64 /* ViewModelWatch.swift */,
 				FE126C2C28B88C36000E0B64 /* Assets.xcassets */,
 				FE126C2E28B88C36000E0B64 /* Preview Content */,
-				FE126C3C28B88F57000E0B64 /* ViewModelWatch.swift */,
 			);
 			path = "ConnectivitySwiftUI Watch App";
 			sourceTree = "<group>";

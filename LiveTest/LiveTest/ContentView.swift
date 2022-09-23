@@ -13,8 +13,8 @@ import WidgetKit
 
 struct ContentView: View {
     
-    @State var currentID: String = ""
-    @State var currentSelection: Status = .received
+    @State private var currentID: String = ""
+    @State private var currentSelection: Status = .received
     var body: some View {
         NavigationStack {
             VStack {
@@ -47,10 +47,12 @@ struct ContentView: View {
             .padding(15)
             .onChange(of: currentSelection) { newValue in
                 // Retrieving Current Activity From the List of Phone Activities
-                if let activity = Activity.activities.first(where: {
-                    (activity: Activity<OrderAttributes>) in
-                    activity.id == currentID
-                }) {
+                if let activity = Activity.activities.first(
+                    where:
+                        { (activity: Activity<OrderAttributes>) in
+                            activity.id == currentID
+                        }
+                ) {
                     print("Activity Found")
                     
                     // Since I Need to Show Animation I'm Delaying Action For 2s
@@ -64,9 +66,9 @@ struct ContentView: View {
                         }
                     }
                 }
-            }
-        }
-    }
+            } // End Of @inlinable public func onChange<V>(of value: V, perform action: @escaping (_ newValue: V -> Void) -> some View where V : Equatable
+        } // End of NavigationStack
+    } // End of body
     
     func removeActivity() {
         if let activity = Activity.activities.first(where: { (activity: Activity<OrderAttributes>) in
@@ -90,7 +92,12 @@ struct ContentView: View {
         let initialContentState = OrderAttributes.ContentState()
         
         do {
-            let activity = try Activity<OrderAttributes>.request(attributes: orderAttributes, contentState: initialContentState, pushType: nil)
+            let activity = try Activity<OrderAttributes>.request(
+                attributes: orderAttributes,
+                contentState: initialContentState,
+                pushType: nil
+            )
+            
             // MARK: Storing CurrentID For Updating Activity
             currentID = activity.id
             print("Activity Added Successfully. id: \(activity.id)")

@@ -3,7 +3,9 @@
 //  ConnectivitySwiftUI
 //
 //  Created by Frank Chu on 8/26/22.
-//
+//  https://betterprogramming.pub/get-started-with-watch-connectivity-with-swiftui-51722324b6f6
+//  Get Started With Watch Connectivity With SwiftUI
+
 
 import SwiftUI
 
@@ -33,7 +35,10 @@ struct ContentView: View {
                             }
                             
                         Button {
-                            self.model.session.sendMessage([VMConstants.message.rawValue: self.messageText], replyHandler: nil) { (error) in
+                            self.model.session.sendMessage(
+                                [VMConstants.message.rawValue: self.messageText],
+                                replyHandler: nil
+                            ) { (error) in
                                 print("DEBUG: \(error.localizedDescription)")
                             }
                             
