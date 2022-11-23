@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "cows",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AlwaysRightInstitute/cows",
+      "state" : {
+        "revision" : "e83648f8265b7f233c6181421bb132c2b2693f4e",
+        "version" : "1.0.10"
+      }
+    }
+  ],
+  "version" : 2
+}
