@@ -8,8 +8,44 @@
 import SwiftUI
 import MetalKit
 
-struct ContentView: UIViewRepresentable {
+struct ContentView: View {
     
+    var body: some View {
+        VStack {
+            Image(systemName: "globe")
+                .imageScale(.large)
+                .foregroundColor(.accentColor)
+            Text("Hello, world!")
+            MetalStruct()
+                .frame(width: 350, height: 350)
+        }
+        .padding()
+    }
+}
+
+
+/// Wrapping a UIKit view controller requires us to create a struct
+/// that conforms to the `UIViewRepresentable` protocol.
+///
+/// That protocol builds on View, which means the struct we’re defining can be used inside a SwiftUI view hierarchy,
+/// however we don’t provide a body property
+/// because the view’s body is the view controller itself –
+/// it just shows whatever UIKit sends back.
+struct MetalStruct: UIViewRepresentable {
+    
+    /// These methods have really precise signatures,
+    /// so I’m going to show you a neat shortcut.
+    /// The reason the methods are long is because SwiftUI needs to know
+    /// what type of view controller our struct is wrapping,
+    /// so if we just straight up tell Swift that type Xcode will help us do the rest.
+    ///
+    /// That isn’t enough code to compile correctly,
+    /// but when Xcode shows an error saying “Type ImagePicker does not conform to
+    /// protocol `UIViewControllerRepresentable`”,
+    /// please click the red and white circle to the left of the error and select “Fix”.
+    /// This will make Xcode write the two methods we actually need,
+    /// and in fact those methods are actually enough for Swift to figure out
+    /// the view controller type so you can delete the typealias line.
     typealias UIViewType = MTKView
     
     func makeCoordinator() -> Renderer {
@@ -46,33 +82,9 @@ struct ContentView: UIViewRepresentable {
     func updateUIView(_ uiView: MTKView, context: Context) {
         
     }
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
 }
 
-class Renderer: MTKViewDelegate {
-    
-    var parent: ContentView
-    
-    init(parent: ContentView) {
-        self.parent = parent
-    }
-    
-    func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
-        
-    }
-    
-    func draw(in view: MTKView) {
-        
-    }
-}
+
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
