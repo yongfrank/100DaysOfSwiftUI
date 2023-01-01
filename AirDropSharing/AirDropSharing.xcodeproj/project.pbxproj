@@ -11,6 +11,11 @@
 		FE126C5028B8A64A000E0B64 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE126C4F28B8A64A000E0B64 /* ContentView.swift */; };
 		FE126C5228B8A64C000E0B64 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE126C5128B8A64C000E0B64 /* Assets.xcassets */; };
 		FE126C5528B8A64C000E0B64 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE126C5428B8A64C000E0B64 /* Preview Assets.xcassets */; };
+		FE1450E6295D705A00ED933C /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1450E5295D705A00ED933C /* Entity.swift */; };
+		FE1450E8295D7D7400ED933C /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = FE1450E7295D7D7400ED933C /* cards.json */; };
+		FE1450EA295D82FB00ED933C /* AssetLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1450E9295D82FB00ED933C /* AssetLoader.swift */; };
+		FE1450EC295D875700ED933C /* AirDropOnlyActivityItemSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1450EB295D875700ED933C /* AirDropOnlyActivityItemSource.swift */; };
+		FE1450EE295D8D0200ED933C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1450ED295D8D0200ED933C /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +25,11 @@
 		FE126C5128B8A64C000E0B64 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE126C5428B8A64C000E0B64 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE126C5B28B8AF22000E0B64 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FE1450E5295D705A00ED933C /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		FE1450E7295D7D7400ED933C /* cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
+		FE1450E9295D82FB00ED933C /* AssetLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetLoader.swift; sourceTree = "<group>"; };
+		FE1450EB295D875700ED933C /* AirDropOnlyActivityItemSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirDropOnlyActivityItemSource.swift; sourceTree = "<group>"; };
+		FE1450ED295D8D0200ED933C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +65,12 @@
 				FE126C5B28B8AF22000E0B64 /* Info.plist */,
 				FE126C4D28B8A64A000E0B64 /* AirDropSharingApp.swift */,
 				FE126C4F28B8A64A000E0B64 /* ContentView.swift */,
+				FE1450EB295D875700ED933C /* AirDropOnlyActivityItemSource.swift */,
+				FE1450ED295D8D0200ED933C /* SceneDelegate.swift */,
+				FE1450E5295D705A00ED933C /* Entity.swift */,
 				FE126C5128B8A64C000E0B64 /* Assets.xcassets */,
+				FE1450E7295D7D7400ED933C /* cards.json */,
+				FE1450E9295D82FB00ED933C /* AssetLoader.swift */,
 				FE126C5328B8A64C000E0B64 /* Preview Content */,
 			);
 			path = AirDropSharing;
@@ -128,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE126C5528B8A64C000E0B64 /* Preview Assets.xcassets in Resources */,
+				FE1450E8295D7D7400ED933C /* cards.json in Resources */,
 				FE126C5228B8A64C000E0B64 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -140,7 +156,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FE126C5028B8A64A000E0B64 /* ContentView.swift in Sources */,
+				FE1450EC295D875700ED933C /* AirDropOnlyActivityItemSource.swift in Sources */,
 				FE126C4E28B8A64A000E0B64 /* AirDropSharingApp.swift in Sources */,
+				FE1450E6295D705A00ED933C /* Entity.swift in Sources */,
+				FE1450EA295D82FB00ED933C /* AssetLoader.swift in Sources */,
+				FE1450EE295D8D0200ED933C /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

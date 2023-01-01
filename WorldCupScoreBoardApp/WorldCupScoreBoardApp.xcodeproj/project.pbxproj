@@ -13,6 +13,7 @@
 		FE16E5D6292DF5F0003BD344 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE16E5D5292DF5F0003BD344 /* Preview Assets.xcassets */; };
 		FE16E5DD292DF609003BD344 /* GameScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16E5DC292DF609003BD344 /* GameScore.swift */; };
 		FE16E5DF292DFF93003BD344 /* GameScoreStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE16E5DE292DFF93003BD344 /* GameScoreStore.swift */; };
+		FE746C5829372DB2005CDDA9 /* WordCupModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE746C5629372DB2005CDDA9 /* WordCupModel.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		FE16E5D5292DF5F0003BD344 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FE16E5DC292DF609003BD344 /* GameScore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScore.swift; sourceTree = "<group>"; };
 		FE16E5DE292DFF93003BD344 /* GameScoreStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScoreStore.swift; sourceTree = "<group>"; };
+		FE746C5729372DB2005CDDA9 /* WordCupModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = WordCupModel.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				FE16E5CD292DF5EE003BD344 /* WorldCupScoreBoardAppApp.swift */,
 				FE16E5CF292DF5EE003BD344 /* ContentView.swift */,
+				FE746C5629372DB2005CDDA9 /* WordCupModel.xcdatamodeld */,
 				FE16E5DE292DFF93003BD344 /* GameScoreStore.swift */,
 				FE16E5DC292DF609003BD344 /* GameScore.swift */,
 				FE16E5D1292DF5F0003BD344 /* Assets.xcassets */,
@@ -147,6 +150,7 @@
 			files = (
 				FE16E5D0292DF5EE003BD344 /* ContentView.swift in Sources */,
 				FE16E5CE292DF5EE003BD344 /* WorldCupScoreBoardAppApp.swift in Sources */,
+				FE746C5829372DB2005CDDA9 /* WordCupModel.xcdatamodeld in Sources */,
 				FE16E5DF292DFF93003BD344 /* GameScoreStore.swift in Sources */,
 				FE16E5DD292DF609003BD344 /* GameScore.swift in Sources */,
 			);
@@ -362,6 +366,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FE746C5629372DB2005CDDA9 /* WordCupModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FE746C5729372DB2005CDDA9 /* WordCupModel.xcdatamodel */,
+			);
+			currentVersion = FE746C5729372DB2005CDDA9 /* WordCupModel.xcdatamodel */;
+			path = WordCupModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FE16E5C2292DF5EE003BD344 /* Project object */;
 }

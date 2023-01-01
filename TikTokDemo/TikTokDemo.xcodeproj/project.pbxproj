@@ -1,0 +1,424 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FED30FB42961B9DA004993DB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED30FB32961B9DA004993DB /* AppDelegate.swift */; };
+		FED30FB62961B9DA004993DB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED30FB52961B9DA004993DB /* SceneDelegate.swift */; };
+		FED30FB82961B9DA004993DB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED30FB72961B9DA004993DB /* ViewController.swift */; };
+		FED30FBB2961B9DA004993DB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED30FB92961B9DA004993DB /* Main.storyboard */; };
+		FED30FBD2961B9DC004993DB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED30FBC2961B9DC004993DB /* Assets.xcassets */; };
+		FED30FC02961B9DC004993DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED30FBE2961B9DC004993DB /* LaunchScreen.storyboard */; };
+		FED30FC92961BA34004993DB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FED30FC82961BA34004993DB /* Kingfisher */; };
+		FED30FCC2961BA74004993DB /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FED30FCB2961BA74004993DB /* SnapKit */; };
+		FED30FCF2961BB2C004993DB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = FED30FCE2961BB2C004993DB /* Lottie */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		FED30FB02961B9DA004993DB /* TikTokDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TikTokDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FED30FB32961B9DA004993DB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FED30FB52961B9DA004993DB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FED30FB72961B9DA004993DB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FED30FBA2961B9DA004993DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FED30FBC2961B9DC004993DB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FED30FBF2961B9DC004993DB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FED30FC12961B9DC004993DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FED30FAD2961B9DA004993DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED30FC92961BA34004993DB /* Kingfisher in Frameworks */,
+				FED30FCC2961BA74004993DB /* SnapKit in Frameworks */,
+				FED30FCF2961BB2C004993DB /* Lottie in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FED30FA72961B9DA004993DB = {
+			isa = PBXGroup;
+			children = (
+				FED30FB22961B9DA004993DB /* TikTokDemo */,
+				FED30FB12961B9DA004993DB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FED30FB12961B9DA004993DB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FED30FB02961B9DA004993DB /* TikTokDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FED30FB22961B9DA004993DB /* TikTokDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FED30FB32961B9DA004993DB /* AppDelegate.swift */,
+				FED30FB52961B9DA004993DB /* SceneDelegate.swift */,
+				FED30FB72961B9DA004993DB /* ViewController.swift */,
+				FED30FB92961B9DA004993DB /* Main.storyboard */,
+				FED30FBC2961B9DC004993DB /* Assets.xcassets */,
+				FED30FBE2961B9DC004993DB /* LaunchScreen.storyboard */,
+				FED30FC12961B9DC004993DB /* Info.plist */,
+			);
+			path = TikTokDemo;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FED30FAF2961B9DA004993DB /* TikTokDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FED30FC42961B9DC004993DB /* Build configuration list for PBXNativeTarget "TikTokDemo" */;
+			buildPhases = (
+				FED30FAC2961B9DA004993DB /* Sources */,
+				FED30FAD2961B9DA004993DB /* Frameworks */,
+				FED30FAE2961B9DA004993DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TikTokDemo;
+			packageProductDependencies = (
+				FED30FC82961BA34004993DB /* Kingfisher */,
+				FED30FCB2961BA74004993DB /* SnapKit */,
+				FED30FCE2961BB2C004993DB /* Lottie */,
+			);
+			productName = TikTokDemo;
+			productReference = FED30FB02961B9DA004993DB /* TikTokDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FED30FA82961B9DA004993DB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					FED30FAF2961B9DA004993DB = {
+						CreatedOnToolsVersion = 14.0;
+					};
+				};
+			};
+			buildConfigurationList = FED30FAB2961B9DA004993DB /* Build configuration list for PBXProject "TikTokDemo" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FED30FA72961B9DA004993DB;
+			packageReferences = (
+				FED30FC72961BA34004993DB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FED30FCA2961BA74004993DB /* XCRemoteSwiftPackageReference "snapkit" */,
+				FED30FCD2961BB2C004993DB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+			);
+			productRefGroup = FED30FB12961B9DA004993DB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FED30FAF2961B9DA004993DB /* TikTokDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FED30FAE2961B9DA004993DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED30FC02961B9DC004993DB /* LaunchScreen.storyboard in Resources */,
+				FED30FBD2961B9DC004993DB /* Assets.xcassets in Resources */,
+				FED30FBB2961B9DA004993DB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FED30FAC2961B9DA004993DB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FED30FB82961B9DA004993DB /* ViewController.swift in Sources */,
+				FED30FB42961B9DA004993DB /* AppDelegate.swift in Sources */,
+				FED30FB62961B9DA004993DB /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		FED30FB92961B9DA004993DB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED30FBA2961B9DA004993DB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FED30FBE2961B9DC004993DB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FED30FBF2961B9DC004993DB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FED30FC22961B9DC004993DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FED30FC32961B9DC004993DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FED30FC52961B9DC004993DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3P8YP4XRH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TikTokDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongfrank.TikTokDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FED30FC62961B9DC004993DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = L3P8YP4XRH;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TikTokDemo/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yongfrank.TikTokDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FED30FAB2961B9DA004993DB /* Build configuration list for PBXProject "TikTokDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED30FC22961B9DC004993DB /* Debug */,
+				FED30FC32961B9DC004993DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FED30FC42961B9DC004993DB /* Build configuration list for PBXNativeTarget "TikTokDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FED30FC52961B9DC004993DB /* Debug */,
+				FED30FC62961B9DC004993DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FED30FC72961BA34004993DB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.0.0;
+			};
+		};
+		FED30FCA2961BA74004993DB /* XCRemoteSwiftPackageReference "snapkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/snapkit/snapkit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		FED30FCD2961BB2C004993DB /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FED30FC82961BA34004993DB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FED30FC72961BA34004993DB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		FED30FCB2961BA74004993DB /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FED30FCA2961BA74004993DB /* XCRemoteSwiftPackageReference "snapkit" */;
+			productName = SnapKit;
+		};
+		FED30FCE2961BB2C004993DB /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FED30FCD2961BB2C004993DB /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FED30FA82961B9DA004993DB /* Project object */;
+}

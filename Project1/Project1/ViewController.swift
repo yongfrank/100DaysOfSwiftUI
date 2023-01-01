@@ -31,6 +31,16 @@ class ViewController: UITableViewController {
         }
         pictures.sort()
         print("DEBUG: pictures", pictures)
+        
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareButton))
+    }
+    
+    @objc func shareButton() {
+        let shareString = "Please Share the App Storm Viewer with your friends"
+        let viewcontroller = UIActivityViewController(activityItems: [shareString], applicationActivities: [])
+        viewcontroller.popoverPresentationController?.barButtonItem = navigationItem.rightBarButtonItem
+        
+        present(viewcontroller, animated: true)
     }
     
     
@@ -54,7 +64,6 @@ class ViewController: UITableViewController {
             navigationController?.pushViewController(vc, animated: true)
         }
     }
-    
     
 }
 
