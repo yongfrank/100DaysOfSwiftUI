@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21179.7" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ncm-aZ-hK1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="ncm-aZ-hK1">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21169.4"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -17,37 +17,40 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaA-Br-lkF">
-                                <rect key="frame" x="95" y="100" width="200" height="100"/>
+                                <rect key="frame" x="81" y="103" width="228" height="114"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="OEb-QJ-dIF"/>
-                                    <constraint firstAttribute="width" constant="200" id="tcd-bl-3ek"/>
+                                    <constraint firstAttribute="width" secondItem="XaA-Br-lkF" secondAttribute="height" multiplier="2:1" id="3Pq-1A-DkK"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="3Hg-mH-Boj"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L9q-dm-Ooa">
-                                <rect key="frame" x="95" y="360" width="200" height="100"/>
+                                <rect key="frame" x="81" y="391" width="228" height="114"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="MYA-S3-r35"/>
-                                    <constraint firstAttribute="width" constant="200" id="dME-c5-3WE"/>
+                                    <constraint firstAttribute="width" secondItem="L9q-dm-Ooa" secondAttribute="height" multiplier="2:1" id="deL-gh-oJX"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pib-nF-P1a"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LEq-JR-P3I">
-                                <rect key="frame" x="95" y="230" width="200" height="100"/>
+                                <rect key="frame" x="81" y="247" width="228" height="114"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="200" id="LOG-Yz-aMD"/>
-                                    <constraint firstAttribute="height" constant="100" id="OlJ-aj-jm4"/>
+                                    <constraint firstAttribute="width" secondItem="LEq-JR-P3I" secondAttribute="height" multiplier="2:1" id="6QT-c1-VuI"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" image="us"/>
+                                <buttonConfiguration key="configuration" style="plain" image="us">
+                                    <directionalEdgeInsets key="contentInsets" top="0.0" leading="0.0" bottom="0.0" trailing="0.0"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qSN-iv-QBv"/>
                                 </connections>
@@ -58,10 +61,13 @@
                         <constraints>
                             <constraint firstItem="L9q-dm-Ooa" firstAttribute="centerX" secondItem="LEq-JR-P3I" secondAttribute="centerX" id="Bwi-Bk-fMH"/>
                             <constraint firstItem="LEq-JR-P3I" firstAttribute="top" secondItem="XaA-Br-lkF" secondAttribute="bottom" constant="30" id="OYY-sk-wRd"/>
+                            <constraint firstItem="LEq-JR-P3I" firstAttribute="height" secondItem="XaA-Br-lkF" secondAttribute="height" id="PhY-bm-eft"/>
                             <constraint firstItem="XaA-Br-lkF" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="12" id="Qka-2j-XZr"/>
                             <constraint firstItem="LEq-JR-P3I" firstAttribute="centerX" secondItem="XaA-Br-lkF" secondAttribute="centerX" id="VS0-Ta-0x6"/>
                             <constraint firstItem="XaA-Br-lkF" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ibB-hF-dYa"/>
                             <constraint firstItem="L9q-dm-Ooa" firstAttribute="top" secondItem="LEq-JR-P3I" secondAttribute="bottom" constant="30" id="rJZ-tg-Sp0"/>
+                            <constraint firstItem="L9q-dm-Ooa" firstAttribute="height" secondItem="LEq-JR-P3I" secondAttribute="height" id="sP9-gE-gHM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="L9q-dm-Ooa" secondAttribute="bottom" constant="20" id="wBs-NJ-ZCV"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IG0-6O-egK"/>
@@ -81,7 +87,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ncm-aZ-hK1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="0lc-VN-UH0">
-                        <rect key="frame" x="0.0" y="44" width="390" height="44"/>
+                        <rect key="frame" x="0.0" y="47" width="390" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>

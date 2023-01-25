@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FECF2E9429654C32007C725E /* TableViewDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECF2E9329654C32007C725E /* TableViewDemoController.swift */; };
+		FECF2E9629656619007C725E /* FlagsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECF2E9529656619007C725E /* FlagsTableViewController.swift */; };
+		FECF2E9829656C22007C725E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECF2E9729656C22007C725E /* DetailViewController.swift */; };
+		FECF2E9A29656C8E007C725E /* flags.json in Resources */ = {isa = PBXBuildFile; fileRef = FECF2E9929656C8E007C725E /* flags.json */; };
+		FECF2E9C29656CB7007C725E /* Flag.swift in Sources */ = {isa = PBXBuildFile; fileRef = FECF2E9B29656CB7007C725E /* Flag.swift */; };
+		FECF2E9F29658EAB007C725E /* SVGKit in Frameworks */ = {isa = PBXBuildFile; productRef = FECF2E9E29658EAB007C725E /* SVGKit */; };
+		FECF2EA129658EAB007C725E /* SVGKitSwift in Frameworks */ = {isa = PBXBuildFile; productRef = FECF2EA029658EAB007C725E /* SVGKitSwift */; };
+		FECF2EA42965AA31007C725E /* DiskCache in Frameworks */ = {isa = PBXBuildFile; productRef = FECF2EA32965AA31007C725E /* DiskCache */; };
 		FED30FA12961ADAC004993DB /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = FED30FA02961ADAC004993DB /* View.xib */; };
 		FED30FA32961B15B004993DB /* ViewDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED30FA22961B15B004993DB /* ViewDemoViewController.swift */; };
 		FED30FA62961B7E1004993DB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = FED30FA52961B7E1004993DB /* Kingfisher */; };
@@ -19,6 +27,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FECF2E9329654C32007C725E /* TableViewDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDemoController.swift; sourceTree = "<group>"; };
+		FECF2E9529656619007C725E /* FlagsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlagsTableViewController.swift; sourceTree = "<group>"; };
+		FECF2E9729656C22007C725E /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		FECF2E9929656C8E007C725E /* flags.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = flags.json; sourceTree = "<group>"; };
+		FECF2E9B29656CB7007C725E /* Flag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flag.swift; sourceTree = "<group>"; };
 		FED30FA02961ADAC004993DB /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 		FED30FA22961B15B004993DB /* ViewDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDemoViewController.swift; sourceTree = "<group>"; };
 		FEF4D4012961A8D80069980F /* WorldFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WorldFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -36,6 +49,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FECF2EA42965AA31007C725E /* DiskCache in Frameworks */,
+				FECF2EA129658EAB007C725E /* SVGKitSwift in Frameworks */,
+				FECF2E9F29658EAB007C725E /* SVGKit in Frameworks */,
 				FED30FA62961B7E1004993DB /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +84,11 @@
 				FED30FA22961B15B004993DB /* ViewDemoViewController.swift */,
 				FED30FA02961ADAC004993DB /* View.xib */,
 				FEF4D40A2961A8D80069980F /* Main.storyboard */,
+				FECF2E9529656619007C725E /* FlagsTableViewController.swift */,
+				FECF2E9B29656CB7007C725E /* Flag.swift */,
+				FECF2E9929656C8E007C725E /* flags.json */,
+				FECF2E9729656C22007C725E /* DetailViewController.swift */,
+				FECF2E9329654C32007C725E /* TableViewDemoController.swift */,
 				FEF4D40D2961A8D90069980F /* Assets.xcassets */,
 				FEF4D40F2961A8D90069980F /* LaunchScreen.storyboard */,
 				FEF4D4122961A8D90069980F /* Info.plist */,
@@ -93,6 +114,9 @@
 			name = WorldFlag;
 			packageProductDependencies = (
 				FED30FA52961B7E1004993DB /* Kingfisher */,
+				FECF2E9E29658EAB007C725E /* SVGKit */,
+				FECF2EA029658EAB007C725E /* SVGKitSwift */,
+				FECF2EA32965AA31007C725E /* DiskCache */,
 			);
 			productName = WorldFlag;
 			productReference = FEF4D4012961A8D80069980F /* WorldFlag.app */;
@@ -124,6 +148,8 @@
 			mainGroup = FEF4D3F82961A8D80069980F;
 			packageReferences = (
 				FED30FA42961B7E1004993DB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				FECF2E9D29658EAB007C725E /* XCRemoteSwiftPackageReference "svgkit" */,
+				FECF2EA22965AA31007C725E /* XCRemoteSwiftPackageReference "DiskCache" */,
 			);
 			productRefGroup = FEF4D4022961A8D80069980F /* Products */;
 			projectDirPath = "";
@@ -143,6 +169,7 @@
 				FEF4D4112961A8D90069980F /* LaunchScreen.storyboard in Resources */,
 				FEF4D40E2961A8D90069980F /* Assets.xcassets in Resources */,
 				FEF4D40C2961A8D80069980F /* Main.storyboard in Resources */,
+				FECF2E9A29656C8E007C725E /* flags.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -155,8 +182,12 @@
 			files = (
 				FEF4D4092961A8D80069980F /* ViewController.swift in Sources */,
 				FEF4D4052961A8D80069980F /* AppDelegate.swift in Sources */,
+				FECF2E9429654C32007C725E /* TableViewDemoController.swift in Sources */,
 				FED30FA32961B15B004993DB /* ViewDemoViewController.swift in Sources */,
 				FEF4D4072961A8D80069980F /* SceneDelegate.swift in Sources */,
+				FECF2E9629656619007C725E /* FlagsTableViewController.swift in Sources */,
+				FECF2E9829656C22007C725E /* DetailViewController.swift in Sources */,
+				FECF2E9C29656CB7007C725E /* Flag.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +407,22 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		FECF2E9D29658EAB007C725E /* XCRemoteSwiftPackageReference "svgkit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/svgkit/svgkit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.0;
+			};
+		};
+		FECF2EA22965AA31007C725E /* XCRemoteSwiftPackageReference "DiskCache" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Mobelux/DiskCache";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 		FED30FA42961B7E1004993DB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/onevcat/Kingfisher";
@@ -387,6 +434,21 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		FECF2E9E29658EAB007C725E /* SVGKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FECF2E9D29658EAB007C725E /* XCRemoteSwiftPackageReference "svgkit" */;
+			productName = SVGKit;
+		};
+		FECF2EA029658EAB007C725E /* SVGKitSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FECF2E9D29658EAB007C725E /* XCRemoteSwiftPackageReference "svgkit" */;
+			productName = SVGKitSwift;
+		};
+		FECF2EA32965AA31007C725E /* DiskCache */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FECF2EA22965AA31007C725E /* XCRemoteSwiftPackageReference "DiskCache" */;
+			productName = DiskCache;
+		};
 		FED30FA52961B7E1004993DB /* Kingfisher */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = FED30FA42961B7E1004993DB /* XCRemoteSwiftPackageReference "Kingfisher" */;
