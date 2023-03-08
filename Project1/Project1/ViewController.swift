@@ -13,6 +13,7 @@ class ViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareButton))
         
         // MARK: - Additional setup after loading the view.
         
@@ -24,15 +25,17 @@ class ViewController: UITableViewController {
         let path = Bundle.main.resourcePath!
         let items = try! fm.contentsOfDirectory(atPath: path)
         
-        for item in items {
-            if item.hasPrefix("nssl") {
-                pictures.append(item)
+        DispatchQueue.global().async { [weak self] in
+            for item in items {
+                if item.hasPrefix("nssl") {
+                    self?.pictures.append(item)
+                }
             }
+            self?.pictures.sort()
+            print("DEBUG: pictures", self?.pictures ?? "Loading error")
         }
-        pictures.sort()
-        print("DEBUG: pictures", pictures)
         
-        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .action, target: self, action: #selector(shareButton))
+        self.tableView.reloadData()
     }
     
     @objc func shareButton() {

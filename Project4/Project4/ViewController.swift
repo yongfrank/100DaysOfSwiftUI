@@ -98,13 +98,14 @@ class ViewController: UIViewController, WKNavigationDelegate {
         }
     }
     
-    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
-        
-        // You met Key-Value Observing, or KVO, which we used to update the loading progress in our web browser. This lets you monitor any property in all of iOS and be notified when it changes.
-        if keyPath == "estimatedProgress" {
-            progressView.progress = Float(webView.estimatedProgress)
-        }
-    }
+//    override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
+//
+//        // You met Key-Value Observing, or KVO, which we used to update the loading progress in our web browser.
+//        // This lets you monitor any property in all of iOS and be notified when it changes.
+//        if keyPath == "estimatedProgress" {
+//            progressView.progress = Float(webView.estimatedProgress)
+//        }
+//    }
     
     @objc func openTapped() {
         let alertController = UIAlertController(title: "Open page...", message: nil, preferredStyle: .actionSheet)

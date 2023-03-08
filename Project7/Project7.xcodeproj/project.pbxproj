@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		FE0D4103297968D800A1F139 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D4102297968D800A1F139 /* AppDelegate.swift */; };
 		FE0D4105297968D800A1F139 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D4104297968D800A1F139 /* SceneDelegate.swift */; };
-		FE0D4107297968D800A1F139 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE0D4106297968D800A1F139 /* ViewController.swift */; };
 		FE0D410A297968D800A1F139 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0D4108297968D800A1F139 /* Main.storyboard */; };
 		FE0D410C297968D900A1F139 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FE0D410B297968D900A1F139 /* Assets.xcassets */; };
 		FE0D410F297968D900A1F139 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FE0D410D297968D900A1F139 /* LaunchScreen.storyboard */; };
@@ -23,7 +22,6 @@
 		FE0D40FF297968D800A1F139 /* Project7.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project7.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE0D4102297968D800A1F139 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE0D4104297968D800A1F139 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FE0D4106297968D800A1F139 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		FE0D4109297968D800A1F139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FE0D410B297968D900A1F139 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FE0D410E297968D900A1F139 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -64,19 +62,42 @@
 		FE0D4101297968D800A1F139 /* Project7 */ = {
 			isa = PBXGroup;
 			children = (
-				FE0D4102297968D800A1F139 /* AppDelegate.swift */,
-				FE0D4104297968D800A1F139 /* SceneDelegate.swift */,
-				FE0D4106297968D800A1F139 /* ViewController.swift */,
+				FE813100299514FE00BE29BB /* Delegate */,
+				FE8130FF299514F200BE29BB /* Models */,
+				FE8130FE299514E200BE29BB /* Views */,
 				FE0D4108297968D800A1F139 /* Main.storyboard */,
-				FE0D41162979695100A1F139 /* TableViewController.swift */,
-				FE0D411C297AA1C000A1F139 /* DetailViewController.swift */,
-				FE0D411A2979713600A1F139 /* Petitions.swift */,
-				FE0D4118297970D100A1F139 /* Petition.swift */,
 				FE0D410B297968D900A1F139 /* Assets.xcassets */,
 				FE0D410D297968D900A1F139 /* LaunchScreen.storyboard */,
 				FE0D4110297968D900A1F139 /* Info.plist */,
 			);
 			path = Project7;
+			sourceTree = "<group>";
+		};
+		FE8130FE299514E200BE29BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FE0D41162979695100A1F139 /* TableViewController.swift */,
+				FE0D411C297AA1C000A1F139 /* DetailViewController.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FE8130FF299514F200BE29BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FE0D411A2979713600A1F139 /* Petitions.swift */,
+				FE0D4118297970D100A1F139 /* Petition.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FE813100299514FE00BE29BB /* Delegate */ = {
+			isa = PBXGroup;
+			children = (
+				FE0D4102297968D800A1F139 /* AppDelegate.swift */,
+				FE0D4104297968D800A1F139 /* SceneDelegate.swift */,
+			);
+			path = Delegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,7 +173,6 @@
 			files = (
 				FE0D4119297970D100A1F139 /* Petition.swift in Sources */,
 				FE0D411B2979713600A1F139 /* Petitions.swift in Sources */,
-				FE0D4107297968D800A1F139 /* ViewController.swift in Sources */,
 				FE0D4103297968D800A1F139 /* AppDelegate.swift in Sources */,
 				FE0D4105297968D800A1F139 /* SceneDelegate.swift in Sources */,
 				FE0D41172979695100A1F139 /* TableViewController.swift in Sources */,

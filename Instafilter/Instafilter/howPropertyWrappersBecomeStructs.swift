@@ -8,7 +8,11 @@
 import SwiftUI
 
 struct howPropertyWrappersBecomeStructs: View {
-    @State private var blurAmount = 0.0
+    @State private var blurAmount = 0.0 {
+        didSet {
+            print(blurAmount)
+        }
+    }
     
     var body: some View {
         VStack {
@@ -17,7 +21,6 @@ struct howPropertyWrappersBecomeStructs: View {
             Slider(value: $blurAmount, in: 0...20)
             Button() {
                 blurAmount = Double.random(in: 0...20)
-                
             } label: {
                 VStack(alignment: .center) {
                     

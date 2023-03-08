@@ -56,7 +56,8 @@ class TableViewController: UITableViewController {
     @objc func showFiltered() {
         let filterAlert = UIAlertController(title: "Filter", message: "Enter Filter String", preferredStyle: .alert)
         filterAlert.addTextField()
-        filterAlert.addAction(UIAlertAction(title: "OK", style: .default, handler: { [weak self, weak filterAlert] _ in
+        
+        let submitAction = UIAlertAction(title: "OK", style: .default, handler: { [weak self, weak filterAlert] _ in
             guard let self = self else { return }
             guard let text = filterAlert?.textFields?.first?.text else {
                 return
@@ -78,7 +79,10 @@ class TableViewController: UITableViewController {
                 empty.addAction(UIAlertAction(title: "OK", style: .default))
                 self.present(empty, animated: true)
             }
-        }))
+        })
+        
+        filterAlert.addAction(submitAction)
+        
         present(filterAlert, animated: true)
     }
     

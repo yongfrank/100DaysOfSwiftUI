@@ -26,7 +26,6 @@
 		FEE242FF28058A1E005EA204 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEE242FE28058A1E005EA204 /* ContentView.swift */; };
 		FEE2430128058A1F005EA204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE2430028058A1F005EA204 /* Assets.xcassets */; };
 		FEE2430428058A1F005EA204 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEE2430328058A1F005EA204 /* Preview Assets.xcassets */; };
-		FEE2430C28058EFA005EA204 /* SamplePackage in Frameworks */ = {isa = PBXBuildFile; productRef = FEE2430B28058EFA005EA204 /* SamplePackage */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,7 +56,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEB73B5F282FAD2D0098E755 /* CodeScanner in Frameworks */,
-				FEE2430C28058EFA005EA204 /* SamplePackage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +136,6 @@
 			);
 			name = HotProspects;
 			packageProductDependencies = (
-				FEE2430B28058EFA005EA204 /* SamplePackage */,
 				FEB73B5E282FAD2D0098E755 /* CodeScanner */,
 			);
 			productName = HotProspects;
@@ -170,7 +167,6 @@
 			);
 			mainGroup = FEE242F028058A1E005EA204;
 			packageReferences = (
-				FEE2430A28058EFA005EA204 /* XCRemoteSwiftPackageReference "SamplePackage" */,
 				FEB73B5D282FAD2D0098E755 /* XCRemoteSwiftPackageReference "CodeScanner" */,
 			);
 			productRefGroup = FEE242FA28058A1E005EA204 /* Products */;
@@ -429,14 +425,6 @@
 				minimumVersion = 2.0.0;
 			};
 		};
-		FEE2430A28058EFA005EA204 /* XCRemoteSwiftPackageReference "SamplePackage" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/twostraws/SamplePackage";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.0;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -444,11 +432,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = FEB73B5D282FAD2D0098E755 /* XCRemoteSwiftPackageReference "CodeScanner" */;
 			productName = CodeScanner;
-		};
-		FEE2430B28058EFA005EA204 /* SamplePackage */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = FEE2430A28058EFA005EA204 /* XCRemoteSwiftPackageReference "SamplePackage" */;
-			productName = SamplePackage;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

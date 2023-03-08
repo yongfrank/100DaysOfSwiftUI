@@ -7,10 +7,21 @@
 
 import SwiftUI
 
-//@MainActor
-class DelayedUpdater: ObservableObject {
-    @Published var value = 0
+@MainActor class DelayedUpdater: ObservableObject {
+    var value = 0 {
+        willSet {
+            objectWillChange.send()
+            test += 1
+        }
+        didSet {
+            if value > 3 {
+                value = 3
+            }
+        }
+    }
 
+    var test = 0
+    
     init() {
         for i in 1...10 {
             DispatchQueue.main.asyncAfter(deadline: .now() + Double(i)) {
@@ -25,7 +36,10 @@ struct ManuallyPublishingObservableobject: View {
     @ObservedObject var updater = DelayedUpdater()
 
     var body: some View {
-        Text("Value is: \(updater.value)")
+        VStack {
+            Text("Value is: \(updater.value)")
+            Text("hello \(updater.test)")
+        }
     }
 }
 

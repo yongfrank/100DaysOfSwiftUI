@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FE1B2120282155CE009BC014 /* howToWrapACustomUIViewForSwiftUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE1B211F282155CE009BC014 /* howToWrapACustomUIViewForSwiftUI.swift */; };
+		FE6578DC299920D0007CEB75 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE6578DB299920D0007CEB75 /* TableViewController.swift */; };
 		FEB51AA627FFE797000D0F28 /* InstafilterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB51AA527FFE797000D0F28 /* InstafilterApp.swift */; };
 		FEB51AA827FFE797000D0F28 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB51AA727FFE797000D0F28 /* ContentView.swift */; };
 		FEB51AAA27FFE799000D0F28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FEB51AA927FFE799000D0F28 /* Assets.xcassets */; };
@@ -17,10 +18,12 @@
 		FEB51AB828003CCF000D0F28 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEB51AB728003CCF000D0F28 /* ImagePicker.swift */; };
 		FEDE8E3B281A784200C0E81D /* integrating-core-image-with-swiftui.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDE8E3A281A784200C0E81D /* integrating-core-image-with-swiftui.swift */; };
 		FEDE8E3D281A788B00C0E81D /* Example.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FEDE8E3C281A788B00C0E81D /* Example.jpeg */; };
+		FEE02996299923A6003045B8 /* View.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEE02995299923A6003045B8 /* View.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FE1B211F282155CE009BC014 /* howToWrapACustomUIViewForSwiftUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = howToWrapACustomUIViewForSwiftUI.swift; sourceTree = "<group>"; };
+		FE6578DB299920D0007CEB75 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		FEB51AA227FFE797000D0F28 /* Instafilter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instafilter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEB51AA527FFE797000D0F28 /* InstafilterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstafilterApp.swift; sourceTree = "<group>"; };
 		FEB51AA727FFE797000D0F28 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -31,6 +34,7 @@
 		FEB51AB728003CCF000D0F28 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		FEDE8E3A281A784200C0E81D /* integrating-core-image-with-swiftui.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "integrating-core-image-with-swiftui.swift"; sourceTree = "<group>"; };
 		FEDE8E3C281A788B00C0E81D /* Example.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Example.jpeg; sourceTree = "<group>"; };
+		FEE02995299923A6003045B8 /* View.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = View.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +74,8 @@
 				FEB51AB527FFECE8000D0F28 /* ShowingMultipleOptionsWithConfirmationDialog.swift */,
 				FE1B211F282155CE009BC014 /* howToWrapACustomUIViewForSwiftUI.swift */,
 				FEB51AB728003CCF000D0F28 /* ImagePicker.swift */,
+				FE6578DB299920D0007CEB75 /* TableViewController.swift */,
+				FEE02995299923A6003045B8 /* View.xib */,
 				FEB51AA927FFE799000D0F28 /* Assets.xcassets */,
 				FEDE8E3C281A788B00C0E81D /* Example.jpeg */,
 				FEB51AAB27FFE799000D0F28 /* Preview Content */,
@@ -144,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEB51AAD27FFE799000D0F28 /* Preview Assets.xcassets in Resources */,
+				FEE02996299923A6003045B8 /* View.xib in Resources */,
 				FEDE8E3D281A788B00C0E81D /* Example.jpeg in Resources */,
 				FEB51AAA27FFE799000D0F28 /* Assets.xcassets in Resources */,
 			);
@@ -159,6 +166,7 @@
 				FEB51AA827FFE797000D0F28 /* ContentView.swift in Sources */,
 				FEB51AB627FFECE8000D0F28 /* ShowingMultipleOptionsWithConfirmationDialog.swift in Sources */,
 				FEB51AB828003CCF000D0F28 /* ImagePicker.swift in Sources */,
+				FE6578DC299920D0007CEB75 /* TableViewController.swift in Sources */,
 				FEDE8E3B281A784200C0E81D /* integrating-core-image-with-swiftui.swift in Sources */,
 				FEB51AA627FFE797000D0F28 /* InstafilterApp.swift in Sources */,
 				FEB51AB427FFE862000D0F28 /* howPropertyWrappersBecomeStructs.swift in Sources */,

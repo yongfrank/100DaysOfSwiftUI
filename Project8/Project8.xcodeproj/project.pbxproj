@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FE3D04CF29817C19002DD669 /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = FE3D04CD29817C19002DD669 /* level1.txt */; };
+		FE3D04D029817C19002DD669 /* level2.txt in Resources */ = {isa = PBXBuildFile; fileRef = FE3D04CE29817C19002DD669 /* level2.txt */; };
 		FE92A4D4297EDD2E0053138B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92A4D3297EDD2E0053138B /* AppDelegate.swift */; };
 		FE92A4D6297EDD2E0053138B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92A4D5297EDD2E0053138B /* SceneDelegate.swift */; };
 		FE92A4D8297EDD2E0053138B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE92A4D7297EDD2E0053138B /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FE3D04CD29817C19002DD669 /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level1.txt; path = "../../HackingWithSwift-main/Classic/project8-files/level1.txt"; sourceTree = "<group>"; };
+		FE3D04CE29817C19002DD669 /* level2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = level2.txt; path = "../../HackingWithSwift-main/Classic/project8-files/level2.txt"; sourceTree = "<group>"; };
 		FE92A4D0297EDD2E0053138B /* Project8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Project8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FE92A4D3297EDD2E0053138B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FE92A4D5297EDD2E0053138B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +41,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE8131072995181D00BE29BB /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				FE92A4D3297EDD2E0053138B /* AppDelegate.swift */,
+				FE92A4D5297EDD2E0053138B /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		FE8131082995182900BE29BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				FE92A4D7297EDD2E0053138B /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		FE92A4C7297EDD2E0053138B = {
 			isa = PBXGroup;
 			children = (
@@ -56,13 +77,14 @@
 		FE92A4D2297EDD2E0053138B /* Project8 */ = {
 			isa = PBXGroup;
 			children = (
-				FE92A4D3297EDD2E0053138B /* AppDelegate.swift */,
-				FE92A4D5297EDD2E0053138B /* SceneDelegate.swift */,
-				FE92A4D7297EDD2E0053138B /* ViewController.swift */,
+				FE8131072995181D00BE29BB /* Delegates */,
+				FE8131082995182900BE29BB /* Controllers */,
 				FE92A4D9297EDD2E0053138B /* Main.storyboard */,
 				FE92A4DC297EDD300053138B /* Assets.xcassets */,
 				FE92A4DE297EDD300053138B /* LaunchScreen.storyboard */,
 				FE92A4E1297EDD300053138B /* Info.plist */,
+				FE3D04CD29817C19002DD669 /* level1.txt */,
+				FE3D04CE29817C19002DD669 /* level2.txt */,
 			);
 			path = Project8;
 			sourceTree = "<group>";
@@ -125,7 +147,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FE3D04D029817C19002DD669 /* level2.txt in Resources */,
 				FE92A4E0297EDD300053138B /* LaunchScreen.storyboard in Resources */,
+				FE3D04CF29817C19002DD669 /* level1.txt in Resources */,
 				FE92A4DD297EDD300053138B /* Assets.xcassets in Resources */,
 				FE92A4DB297EDD2E0053138B /* Main.storyboard in Resources */,
 			);
