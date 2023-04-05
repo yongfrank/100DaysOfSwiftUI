@@ -6,16 +6,16 @@
 //
 
 import SwiftUI
+import CoreData
 
 @main
 struct CoreDataProjectApp: App {
-    
-    @StateObject private var dataControllerByF = DataControllerInCoreData()
+    let persistenceController: DataController = DataController.shared
     
     var body: some Scene {
         WindowGroup {
             ContentView()
-                .environment(\.managedObjectContext, dataControllerByF.containerByF.viewContext)
+                .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
 }

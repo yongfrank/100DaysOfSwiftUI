@@ -8,52 +8,33 @@
 import Foundation
 
 class Solution {
-    func merge(nums: inout [Int], start: Int, mid: Int, end: Int) {
-        print(start, mid, end)
-        var leftArray = [Int]()
-        var rightArray = [Int]()
-        for i in start ..< mid + 1 {
-            leftArray.append(nums[i])
-        }
-        for i in mid + 1 ..< end + 1 {
-            rightArray.append(nums[i])
-        }
-        var i = 0
-        var j = 0
-        var k = start
-        while i < leftArray.count && j < rightArray.count {
-            if leftArray[i] > rightArray[j] {
-                nums[k] = rightArray[j]
-                j += 1
-            } else {
-                nums[k] = leftArray[i]
-                i += 1
+    // 剑指 Offer 21. 调整数组顺序使奇数位于偶数前面
+    func exchangeHOF(_ nums: [Int]) -> [Int] {
+        return nums.filter({ $0 % 2 == 1 }) + nums.filter({ $0 % 2 == 0 })
+    }
+    
+    func exchange(_ nums: [Int]) -> [Int] {
+        var nums = nums
+        var left = 0
+        var right = nums.count - 1
+        
+        while left < right {
+            while nums[left] & 1 == 1 && left < right {
+                left += 1
             }
-            k += 1
+            while nums[right] & 1 == 0 && left < right {
+                right -= 1
+            }
+            nums.swapAt(left, right)
+            left += 1
+            right -= 1
         }
-        while i < leftArray.count {
-            nums[k] = leftArray[i]
-            i += 1
-            k += 1
-        }
-        while j < rightArray.count {
-            nums[k] = rightArray[j]
-            j += 1
-            k += 1
-        }
+        
+        return nums
     }
-    func mergeSort(nums: inout [Int], start: Int, end: Int) {
-        if start >= end {
-            return
-        }
-        let mid = (start + end) / 2
-        mergeSort(nums: &nums, start: start, end: mid)
-        mergeSort(nums: &nums, start: mid + 1, end: end)
-        merge(nums: &nums, start: start, mid: mid, end: end)
-    }
+    
     func test() {
-        var nums = [1, 5, 39, 32, 2, 9, 8, 3, 2, 2]
-        mergeSort(nums: &nums, start: 0, end: nums.count - 1)
-        print(nums)
+        print("Test Case 0", self.exchange([1, 2, 3, 4]))
+        print("Test Case 1", self.exchange([1, 3, 3]))
     }
 }

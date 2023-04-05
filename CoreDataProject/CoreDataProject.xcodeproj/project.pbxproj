@@ -7,27 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		FE8F417527FEA76C00D1F980 /* Movie+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F417327FEA76C00D1F980 /* Movie+CoreDataClass.swift */; };
-		FE8F417627FEA76C00D1F980 /* Movie+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE8F417427FEA76C00D1F980 /* Movie+CoreDataProperties.swift */; };
+		FE83AFC329BA3832001FEEA0 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE83AFC229BA3832001FEEA0 /* DataController.swift */; };
+		FE83AFC629BA38A9001FEEA0 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FE83AFC429BA38A9001FEEA0 /* CoreDataProject.xcdatamodeld */; };
+		FE83AFC929BABFAB001FEEA0 /* Order+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE83AFC729BABFAB001FEEA0 /* Order+CoreDataClass.swift */; };
+		FE83AFCA29BABFAB001FEEA0 /* Order+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE83AFC829BABFAB001FEEA0 /* Order+CoreDataProperties.swift */; };
 		FED436E327FE9ADB001C8E80 /* CoreDataProjectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED436E227FE9ADB001C8E80 /* CoreDataProjectApp.swift */; };
 		FED436E527FE9ADB001C8E80 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED436E427FE9ADB001C8E80 /* ContentView.swift */; };
 		FED436E727FE9ADC001C8E80 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED436E627FE9ADC001C8E80 /* Assets.xcassets */; };
 		FED436EA27FE9ADC001C8E80 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FED436E927FE9ADC001C8E80 /* Preview Assets.xcassets */; };
 		FED436F127FE9B2D001C8E80 /* DataControllerInCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED436F027FE9B2D001C8E80 /* DataControllerInCoreData.swift */; };
-		FED436F427FE9BF3001C8E80 /* CoreDataProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FED436F227FE9BF3001C8E80 /* CoreDataProject.xcdatamodeld */; };
 		FED436F727FEA533001C8E80 /* why-does-self-work foreach.swift in Sources */ = {isa = PBXBuildFile; fileRef = FED436F627FEA533001C8E80 /* why-does-self-work foreach.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		FE8F417327FEA76C00D1F980 /* Movie+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataClass.swift"; sourceTree = "<group>"; };
-		FE8F417427FEA76C00D1F980 /* Movie+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Movie+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		FE83AFC229BA3832001FEEA0 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FE83AFC529BA38A9001FEEA0 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
+		FE83AFC729BABFAB001FEEA0 /* Order+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FE83AFC829BABFAB001FEEA0 /* Order+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Order+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		FED436DF27FE9ADB001C8E80 /* CoreDataProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreDataProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED436E227FE9ADB001C8E80 /* CoreDataProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProjectApp.swift; sourceTree = "<group>"; };
 		FED436E427FE9ADB001C8E80 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FED436E627FE9ADC001C8E80 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FED436E927FE9ADC001C8E80 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FED436F027FE9B2D001C8E80 /* DataControllerInCoreData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataControllerInCoreData.swift; sourceTree = "<group>"; };
-		FED436F327FE9BF3001C8E80 /* CoreDataProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataProject.xcdatamodel; sourceTree = "<group>"; };
 		FED436F627FEA533001C8E80 /* why-does-self-work foreach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "why-does-self-work foreach.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,6 +69,7 @@
 				FED436E627FE9ADC001C8E80 /* Assets.xcassets */,
 				FED436F627FEA533001C8E80 /* why-does-self-work foreach.swift */,
 				FED436E827FE9ADC001C8E80 /* Preview Content */,
+				FE83AFC229BA3832001FEEA0 /* DataController.swift */,
 			);
 			path = CoreDataProject;
 			sourceTree = "<group>";
@@ -82,10 +85,10 @@
 		FED436F527FE9BFC001C8E80 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				FE8F417327FEA76C00D1F980 /* Movie+CoreDataClass.swift */,
-				FE8F417427FEA76C00D1F980 /* Movie+CoreDataProperties.swift */,
+				FE83AFC729BABFAB001FEEA0 /* Order+CoreDataClass.swift */,
+				FE83AFC829BABFAB001FEEA0 /* Order+CoreDataProperties.swift */,
 				FED436F027FE9B2D001C8E80 /* DataControllerInCoreData.swift */,
-				FED436F227FE9BF3001C8E80 /* CoreDataProject.xcdatamodeld */,
+				FE83AFC429BA38A9001FEEA0 /* CoreDataProject.xcdatamodeld */,
 			);
 			path = CoreData;
 			sourceTree = "<group>";
@@ -162,10 +165,11 @@
 			files = (
 				FED436F127FE9B2D001C8E80 /* DataControllerInCoreData.swift in Sources */,
 				FED436F727FEA533001C8E80 /* why-does-self-work foreach.swift in Sources */,
+				FE83AFCA29BABFAB001FEEA0 /* Order+CoreDataProperties.swift in Sources */,
+				FE83AFC629BA38A9001FEEA0 /* CoreDataProject.xcdatamodeld in Sources */,
 				FED436E527FE9ADB001C8E80 /* ContentView.swift in Sources */,
-				FED436F427FE9BF3001C8E80 /* CoreDataProject.xcdatamodeld in Sources */,
-				FE8F417527FEA76C00D1F980 /* Movie+CoreDataClass.swift in Sources */,
-				FE8F417627FEA76C00D1F980 /* Movie+CoreDataProperties.swift in Sources */,
+				FE83AFC329BA3832001FEEA0 /* DataController.swift in Sources */,
+				FE83AFC929BABFAB001FEEA0 /* Order+CoreDataClass.swift in Sources */,
 				FED436E327FE9ADB001C8E80 /* CoreDataProjectApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,7 +227,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -277,7 +281,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -303,6 +307,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -332,6 +337,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -369,14 +375,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		FED436F227FE9BF3001C8E80 /* CoreDataProject.xcdatamodeld */ = {
+		FE83AFC429BA38A9001FEEA0 /* CoreDataProject.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				FED436F327FE9BF3001C8E80 /* CoreDataProject.xcdatamodel */,
+				FE83AFC529BA38A9001FEEA0 /* CoreDataProject.xcdatamodel */,
 			);
-			currentVersion = FED436F327FE9BF3001C8E80 /* CoreDataProject.xcdatamodel */;
-			path = CoreDataProject.xcdatamodeld;
-			sourceTree = "<group>";
+			currentVersion = FE83AFC529BA38A9001FEEA0 /* CoreDataProject.xcdatamodel */;
+			name = CoreDataProject.xcdatamodeld;
+			path = CoreDataProject/CoreDataProject.xcdatamodeld;
+			sourceTree = SOURCE_ROOT;
 			versionGroupType = wrapper.xcdatamodel;
 		};
 /* End XCVersionGroup section */

@@ -45,6 +45,51 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FE49670D29D981F1000379AA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEFEBC7529B1C76B00ED739B /* Person.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FE49670E29D981F6000379AA /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FE6578BF2998D124007CEB75 /* AppDelegate.swift */,
+				FE6578C12998D124007CEB75 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		FE49670F29D981FC000379AA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FE6578C52998D124007CEB75 /* Main.storyboard */,
+				FE6578D32998D3E7007CEB75 /* SwiftUIView.swift */,
+				FE6578D52998D635007CEB75 /* PersonCell.swift */,
+				FEE02997299D37F9003045B8 /* Landmarks.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FE49671029D98205000379AA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FE6578C32998D124007CEB75 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FE49671129D98222000379AA /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				FE6578C82998D125007CEB75 /* Assets.xcassets */,
+				FE6578CA2998D125007CEB75 /* LaunchScreen.storyboard */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		FE6578B32998D124007CEB75 = {
 			isa = PBXGroup;
 			children = (
@@ -64,17 +109,12 @@
 		FE6578BE2998D124007CEB75 /* Project10NameToFaces */ = {
 			isa = PBXGroup;
 			children = (
-				FE6578BF2998D124007CEB75 /* AppDelegate.swift */,
-				FE6578C12998D124007CEB75 /* SceneDelegate.swift */,
-				FE6578C32998D124007CEB75 /* ViewController.swift */,
-				FEFEBC7529B1C76B00ED739B /* Person.swift */,
-				FE6578C52998D124007CEB75 /* Main.storyboard */,
-				FE6578D52998D635007CEB75 /* PersonCell.swift */,
-				FE6578D32998D3E7007CEB75 /* SwiftUIView.swift */,
-				FEE02997299D37F9003045B8 /* Landmarks.swift */,
-				FE6578C82998D125007CEB75 /* Assets.xcassets */,
-				FE6578CA2998D125007CEB75 /* LaunchScreen.storyboard */,
 				FE6578CD2998D125007CEB75 /* Info.plist */,
+				FE49671129D98222000379AA /* Assets */,
+				FE49670E29D981F6000379AA /* App */,
+				FE49670D29D981F1000379AA /* Model */,
+				FE49670F29D981FC000379AA /* View */,
+				FE49671029D98205000379AA /* Controller */,
 			);
 			path = Project10NameToFaces;
 			sourceTree = "<group>";
