@@ -54,8 +54,8 @@
 			isa = PBXGroup;
 			children = (
 				FE83AF6729B6B76B001FEEA0 /* AppDelegate.swift */,
-				FE83AF6D29B6B76B001FEEA0 /* GameScene.swift */,
 				FE83AF6F29B6B76B001FEEA0 /* GameViewController.swift */,
+				FE83AF6D29B6B76B001FEEA0 /* GameScene.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";

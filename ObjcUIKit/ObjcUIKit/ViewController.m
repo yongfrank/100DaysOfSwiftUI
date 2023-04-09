@@ -22,7 +22,7 @@
     self.imageView.layer.masksToBounds = true;
     self.imageView.layer.borderWidth = 2.0;
     self.imageView.layer.borderColor = [UIColor whiteColor].CGColor;
-    self.secondImgView.layer.cornerRadius = 100;
+    self.secondImgView.layer.cornerRadius = self.imageView.frame.size.width / 2;
     self.secondImgView.layer.borderWidth = 2.0;
     self.secondImgView.layer.borderColor = [UIColor whiteColor].CGColor;
 }

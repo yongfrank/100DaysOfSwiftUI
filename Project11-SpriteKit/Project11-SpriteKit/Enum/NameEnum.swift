@@ -8,7 +8,7 @@
 import Foundation
 
 enum NameEnum: String {
-    case good, bad, ball
+    case good, bad, ball, box
 }
 
 extension NameEnum: CustomStringConvertible {

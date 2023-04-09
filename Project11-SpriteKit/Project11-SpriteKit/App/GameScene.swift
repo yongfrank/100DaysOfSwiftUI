@@ -10,6 +10,9 @@ import GameplayKit
 
 class GameScene: SKScene, SKPhysicsContactDelegate {
     
+    var ballCount = 0
+    var ballUsed = 0
+    
     var scoreLabel: SKLabelNode!
     var score = 0 {
         didSet {
@@ -24,6 +27,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 self.editLabel.text = "Done"
             } else {
                 self.editLabel.text = "Edit"
+            }
+        }
+    }
+    
+    var hardModeLabel: SKLabelNode!
+    var isHardMode: Bool = false {
+        didSet {
+            if isHardMode {
+                self.hardModeLabel.text = "Hard"
+                self.ballUsed = 0
+            } else {
+                self.hardModeLabel.text = "Easy"
+                self.ballUsed = 0
             }
         }
     }
@@ -49,6 +65,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         // MARK: - EditLabel
         self.initEditLabel(at: CGPoint(x: 80, y: 700))
+        
+        self.initTextLabel(label: &self.hardModeLabel, at: CGPoint(x: 280, y: 700))
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -60,10 +78,12 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             if objects.contains(self.editLabel) {
                 self.editingMode.toggle()
+            } else if objects.contains(self.hardModeLabel) {
+                self.isHardMode.toggle()
             } else {
                 if self.editingMode {
                     // create a box
-                    makeBox(at: location)
+                    self.makeBox(at: location)
                 } else {
                     self.makeRedBall(at: location)
                 }
@@ -80,12 +100,19 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         
         box.physicsBody = SKPhysicsBody(rectangleOf: box.size)
         box.physicsBody?.isDynamic = false
+        box.physicsBody?.contactTestBitMask = box.physicsBody?.collisionBitMask ?? 0
+        
+        box.name = NameEnum.box.description
         self.addChild(box)
     }
     
     func makeRedBall(at location: CGPoint) {
+        if ballCount >= 5 { return }
+        if isHardMode && ballUsed >= 5 { return }
+        
         let ball = SKSpriteNode(imageNamed: Assets.Ball.randomBall().description)
         ball.position = location
+        ball.position = CGPoint(x: location.x, y: self.frame.size.height)
         
         // img @2x 88 x 88 ==> 44 x 44 ==> dimensions = 22
         ball.physicsBody = SKPhysicsBody(circleOfRadius: ball.size.width / 2.0)
@@ -99,7 +126,18 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         ball.physicsBody?.contactTestBitMask = ball.physicsBody?.collisionBitMask ?? 0
         
         ball.name = NameEnum.ball.description
+        
+        self.ballCount += 1
+        self.ballUsed += 1
         self.addChild(ball)
+    }
+    
+    func initTextLabel(label: inout SKLabelNode!, at position: CGPoint) {
+        label = SKLabelNode(fontNamed: "Chalkduster")
+        label.text = "Easy"
+        label.position = position
+        
+        self.addChild(label)
     }
     
     func initEditLabel(at position: CGPoint) {
@@ -125,37 +163,37 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         guard let nodeA = contact.bodyA.node else { return }
         guard let nodeB = contact.bodyB.node else { return }
         
-        if nodeA.name == NameEnum.ball.description {
-            collisionBetween(ball: nodeA, object: nodeB)
-        } else if nodeB.name == NameEnum.ball.description {
-            collisionBetween(ball: nodeB, object: nodeA)
+        if nodeA.name == NameEnum.ball.description || nodeA.name == NameEnum.box.description {
+            collisionBetween(toBeDestroied: nodeA, object: nodeB)
+        } else if nodeB.name == NameEnum.ball.description || nodeB.name == NameEnum.box.description {
+            collisionBetween(toBeDestroied: nodeB, object: nodeA)
         }
     }
     
-    func collisionBetween(ball: SKNode, object: SKNode) {
+    func collisionBetween(toBeDestroied: SKNode, object: SKNode) {
         if object.name == NameEnum.good.description {
-            destory(ball: ball)
+            destory(objct: toBeDestroied)
             self.score += 1
+            self.ballCount -= 1
         } else if object.name == NameEnum.bad.description {
-            destory(ball: ball)
+            destory(objct: toBeDestroied)
             self.score -= 1
+            self.ballCount -= 1
+        } else if toBeDestroied.name == NameEnum.box.description {
+            self.destory(objct: toBeDestroied)
         }
     }
     
-    func destory(ball: SKNode) {
+    func destory(objct: SKNode) {
 //        if let fireParticles = SKEmitterNode(fileNamed: "FireParticles") {
 //            fireParticles.position = ball.position
 //            self.addChild(fireParticles)
 //        }
         if let fireParticles = SKEmitterNode(fileNamed: "FireParticles") {
-            fireParticles.position = ball.position
+            fireParticles.position = objct.position
             addChild(fireParticles)
         }
-        else {
-            print("No")
-            print(Assets.fireParticles.description)
-        }
-        ball.removeFromParent()
+        objct.removeFromParent()
     }
     
     func makeSlot(at position: CGPoint, isGood: Bool) {
