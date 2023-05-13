@@ -1,6 +1,6 @@
 # Created by https://www.toptal.com/developers/gitignore/api/xcode,objective-c,swift
 # Edit at https://www.toptal.com/developers/gitignore?templates=xcode,objective-c,swift
-
+.DS_Store
 ### Objective-C ###
 # Xcode
 #
