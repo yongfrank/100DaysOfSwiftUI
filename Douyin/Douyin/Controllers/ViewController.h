@@ -1,13 +1,12 @@
 //
 //  ViewController.h
-//  ObjcUIKit
+//  Douyin
 //
-//  Created by Frank Chu on 4/9/23.
+//  Created by Frank Chu on 5/11/23.
 //
 
 #import <UIKit/UIKit.h>
 
-/// See more on ``SceneDelegate``
 @interface ViewController : UIViewController
 
 
