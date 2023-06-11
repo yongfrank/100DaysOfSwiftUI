@@ -1,1 +1,3 @@
 ${PODS_ROOT}/Target Support Files/Pods-DouyinObjc/Pods-DouyinObjc-frameworks.sh
+${BUILT_PRODUCTS_DIR}/DoccDemo/DoccDemo.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework

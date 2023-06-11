@@ -29,7 +29,22 @@ struct PersistenceController {
     }()
 
     let container: NSPersistentContainer
+    
+    /**
+    Summary is here. Init method.
 
+    ```swift
+    print("hello, world)
+    ```
+    */
+    
+    
+    /// <#Description#>
+    /// - Parameter inMemory: <#inMemory description#>
+    ///
+    /// /**
+    ///
+    /// */
     init(inMemory: Bool = false) {
         container = NSPersistentContainer(name: "TimeItems")
         if inMemory {

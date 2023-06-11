@@ -7,6 +7,9 @@ target 'DouyinObjc' do
 
   # Pods for DouyinObjc
   pod 'LookinServer', :configurations => ['Debug']
+  pod 'SDWebImage', '~> 5.0'
+  pod 'DoccDemo', :path => './DoccDemo'
+
 
   target 'DouyinObjcTests' do
     inherit! :search_paths

@@ -1,0 +1,38 @@
+{
+    "code": 0,
+    "data": [
+        {
+            "groupName": "订单通知",
+            "capsuleGroup": [
+                {
+                    "_note":"capsuleTypeStatus: 0-未开， 1-打开",
+                    "capsuleKey": "",
+                    "capsuleKeyName": "订单通知",
+                    "capsuleDesc": "订单交易状态通知",
+                    "capsuleType": "",
+                    "capsuleTypeStatus": 0,
+                }
+            ]
+        },
+        {
+            "groupName": "优惠活动",
+            "capsuleGroup": [
+                {
+                  "_note":"capsuleTypeStatus: 0-未开， 1-打开",
+                    "capsuleKey": "",
+                    "capsuleKeyName": "出行福利",
+                    "capsuleDesc": "打车，等优惠活动",
+                    "capsuleType": "",
+                    "capsuleTypeStatus": 1,
+                },
+                {
+                    "capsuleKey": "",
+                    "capsuleKeyName": "车主服务",
+                    "capsuleDesc": "加油，代驾",
+                    "capsuleType": "",
+                    "capsuleTypeStatus": 0,
+                }
+            ]
+        }
+    ]
+}

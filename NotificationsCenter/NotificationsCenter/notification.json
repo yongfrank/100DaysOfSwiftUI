@@ -1,0 +1,32 @@
+{
+    "code": 0,
+    "data": [
+        {
+            "groupName": "",
+            "capsuleGroup": [
+                {
+                    "_note": "capsuleTypeStatus: 0-未开， 1-打开",
+                    "capsuleKey": "",
+                    "capsuleKeyName": "app内横幅提醒",
+                    "capsuleDesc": "开启后，可收到订单通知",
+                    "capsuleType": "",
+                    "capsuleTypeStatus": 0,
+                },
+                {
+                    "capsuleKey": "",
+                    "capsuleKeyName": "及时聊天横幅",
+                    "capsuleDesc": "开启后可收到司乘通知",
+                    "capsuleType": "",
+                    "capsuleTypeStatus": 1,
+                },
+                {
+                    "capsuleKey": "",
+                    "capsuleKeyName": "首页营销弹窗",
+                    "capsuleDesc": "",
+                    "capsuleType": "",
+                    "capsuleTypeStatus": 1,
+                }
+            ]
+        }
+    ]
+}
